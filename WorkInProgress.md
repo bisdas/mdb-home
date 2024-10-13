@@ -1,0 +1,4 @@
+## Todo
+
+-   Theme provider
+-   SEO

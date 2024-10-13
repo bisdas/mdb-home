@@ -1,0 +1,6 @@
+# Ignore github artifacts
+.github
+.vite
+.husky
+dist
+CHANGELOG.md
