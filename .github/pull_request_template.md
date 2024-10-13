@@ -1,20 +1,20 @@
-## Description
+# Description
 <!-- A short description of the changes introduced in the PR -->
 
 
-## Work Item:
+# Work Item:
 <!-- JIRA Item, etc. -->
 
 
-## Screenshots / GIFs:
-<!-- Attach Test Screenshots or GIFs, If necessary, Add Mobile and Desktop Versions -->
+# Screenshots / Screen Recording:
+<!-- Attach Test Screenshots or Recording, If necessary, Add Mobile and Desktop Versions -->
 
 
-## Dependencies: _(optional)_
+# Dependencies: _(optional)_
 <!-- List any new dependencies added or existing dependencies updated in this PR. These can be dependency with the Back-end or other teams -->
 
 
-## Checklist:
+# Checklist:
 - [ ] Code follows the general best practices.
 - [ ] Performed a self-review of the code.
 - [ ] Code compiles and builds without errors.
