@@ -6,8 +6,8 @@
 <!-- JIRA Item, etc. -->
 
 
-## Screenshots / GIFs:
-<!-- Attach Test Screenshots or GIFs, If necessary, Add Mobile and Desktop Versions -->
+## Screenshots / Screen Recording:
+<!-- Attach Test Screenshots or Recording, If necessary, Add Mobile and Desktop Versions -->
 
 
 ## Dependencies: _(optional)_
