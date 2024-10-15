@@ -1,11 +1,16 @@
+import { ContentBlock } from 'src/components/ContentBlock/ContentBlock';
+import { OuterWrapper } from './MDBHome.styled';
+
 /**
  * MDBHome component.
  * @returns component JSX.
  */
 export const MDBHome = () => {
     return (
-        <>
-            <div>This is MDB Home</div>
-        </>
+        <OuterWrapper>
+            <ContentBlock title="Contact us" padding>
+                <p>Content us block</p>
+            </ContentBlock>
+        </OuterWrapper>
     );
 };
