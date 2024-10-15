@@ -1,5 +1,7 @@
+import { AppSurface } from './App.styled';
 import { CommonUIComponents } from './components/shared/CommonUIComponents/CommonUIComponents';
 import { useInitialization } from './hooks/useInitialization';
+import './styles/globalStyles.scss';
 
 interface AppProps {
     children: React.ReactElement;
@@ -16,7 +18,7 @@ export const App = (props: AppProps) => {
 
     // todo: add loader component
     if (isLoading) {
-        return <div>Loading...</div>;
+        return <AppSurface>Loading...</AppSurface>;
     }
 
     /**
@@ -25,21 +27,21 @@ export const App = (props: AppProps) => {
      */
     if (loadingErrors.length > 0) {
         return (
-            <div>
+            <AppSurface>
                 <h4>Initialization Error</h4>
                 <ul>
                     {loadingErrors.map((error, index) => (
                         <li key={index}>{error.message}</li>
                     ))}
                 </ul>
-            </div>
+            </AppSurface>
         );
     }
 
     return (
         <>
             <CommonUIComponents />
-            <div>{children}</div>
+            <AppSurface>{children}</AppSurface>
         </>
     );
 };

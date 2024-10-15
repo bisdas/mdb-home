@@ -53,11 +53,11 @@ export const useInitialization = () => {
             globalConfig.set(ConfigKeys.Environment, await initializeEnvironment());
         } catch (error: unknown) {
             // todo: have a standard error format
-            setLoadingErrors([...loadingErrors, error as InitializationError]);
+            setLoadingErrors((errors) => [...errors, error as InitializationError]);
         } finally {
             setIsLoading(false);
         }
-    }, [loadingErrors]);
+    }, []);
 
     useEffect(() => {
         initializeAll();
