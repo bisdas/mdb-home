@@ -1,12 +1,16 @@
 @import './fontFaces.scss';
 
 :root {
-    font-family: Montserrat-Regular, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1;
-    font-weight: 400;
+    --default-font-family: 'Montserrat-Regular', 'Helvetica', Arial, 'sans-serif';
+    --default-font-size: 30px;
+
+    --content-block-title-font-size: 48px;
+    --content-block-title-font-family: 'Montserrat-Bold', 'Helvetica', Arial, 'sans-serif';
+    --content-block-layout-padding: 48px;
 }
 
 body {
+    font-family: var(--default-font-family);
+    font-size: var(--default-font-size);
     margin: 0;
-    font-family: Montserrat-Regular, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
