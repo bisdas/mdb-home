@@ -9,7 +9,7 @@ export const MDBHome = () => {
     return (
         <OuterWrapper>
             <ContentBlock title="Contact us" padding>
-                <p>Content us block</p>
+                <div>Content us block</div>
             </ContentBlock>
         </OuterWrapper>
     );
