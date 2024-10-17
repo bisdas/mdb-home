@@ -1,16 +1,22 @@
 @import './fontFaces.scss';
 
 :root {
-    --default-font-family: 'Montserrat-Regular', 'Helvetica', Arial, 'sans-serif';
-    --default-font-size: 30px;
-
-    --content-block-title-font-size: 48px;
-    --content-block-title-font-family: 'Montserrat-Bold', 'Helvetica', Arial, 'sans-serif';
-    --content-block-layout-padding: 48px;
+    --default-font-family: 'MDB-Montserrat', 'Helvetica', Arial, 'sans-serif';
+    --default-font-size: 28px;
+    --default-light-theme-font-color: #000000;
+    --default-dark-theme-font-color: #ffffff;
+    --default-light-theme-background-color: #ffffff;
+    --default-dark-theme-background-color: #000000;
+    --default-light-gray: #ededed;
+    --default-dark-gray: #333333;
 }
 
+html,
 body {
     font-family: var(--default-font-family);
     font-size: var(--default-font-size);
+    color: var(--default-light-theme-font-color);
+    background-color: var(--default-light-theme-background-color);
     margin: 0;
+    border: 0;
 }

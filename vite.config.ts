@@ -1,9 +1,18 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import vitePluginReact from '@vitejs/plugin-react';
+import vitePluginSvgr from 'vite-plugin-svgr';
 import babelMacros from 'vite-plugin-babel-macros';
 
 export default defineConfig({
-    plugins: [react(), babelMacros()],
+    plugins: [
+        vitePluginReact(),
+        vitePluginSvgr({
+            // svgr options: https://react-svgr.com/docs/options/
+            svgrOptions: { exportType: 'default', ref: true, svgo: false, titleProp: true },
+            include: '**/*.svg',
+        }),
+        babelMacros(),
+    ],
     resolve: {
         alias: {
             src: '/src',

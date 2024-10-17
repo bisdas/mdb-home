@@ -1,8 +1,7 @@
 import React from 'react';
-import App from './App.tsx';
+import { App as AppComponent } from './App.tsx';
 import { ErrorBoundary } from './components/shared/ErrorBoundary/ErrorBoundary.tsx';
 import { ErrorBoundaryFallbackUI } from './components/shared/ErrorBoundaryFallbackUI/ErrorBoundaryFallbackUI.tsx';
-import { MDBHome as MDBHomeComponent } from 'src/components/MDBHome/MDBHome.tsx';
 
 interface RootProviderProps {
     children: React.ReactNode;
@@ -21,13 +20,11 @@ const RootProvider = ({ children }: RootProviderProps): React.ReactElement => (
 );
 
 /**
- * Demo component.
- * @returns The rendered Demo component.
+ * App component.
+ * @returns The rendered component.
  */
-export const MDBHome = (): React.ReactElement => (
+export const App = (): React.ReactElement => (
     <RootProvider>
-        <App>
-            <MDBHomeComponent />
-        </App>
+        <AppComponent />
     </RootProvider>
 );

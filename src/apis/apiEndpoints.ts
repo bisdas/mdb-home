@@ -1,8 +1,9 @@
-import { Environments } from 'src/constants/commonConstants';
+import { Environment } from 'src/constants/commonConstants';
 
 export const WebApiBaseUrl = {
-    [Environments.Production]: 'https://web-api.example.com',
-    [Environments.Test]: 'https://web-api.test.example.com',
+    [Environment.Production]: 'https://web-api.example.com',
+    [Environment.Development]: 'https://web-api.dev.example.com',
+    [Environment.Staging]: 'https://web-api.staging.example.com',
 };
 
 export const featureEndpoints = {
