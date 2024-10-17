@@ -1,20 +1,20 @@
-import { OuterWrapper, TitleText, Content } from './ContentBlock.styled';
+import { OuterWrapper, TitleText, Content } from './Block.styled';
 
-interface ContentBlockProps {
+interface BlockProps {
     title: string;
     padding?: boolean;
     children: React.ReactNode;
 }
 
 /**
- * ContentBlock component.
+ * Block component.
  * @param props props
  * @param props.title title of the block
  * @param props.padding indicates if padding applied
  * @param props.children children node of the block
  * @returns component JSX.
  */
-export const ContentBlock = ({ title, padding = false, children }: ContentBlockProps) => {
+export const Block = ({ title, padding = false, children }: BlockProps) => {
     return (
         <OuterWrapper padding={padding}>
             <TitleText>{title}</TitleText>

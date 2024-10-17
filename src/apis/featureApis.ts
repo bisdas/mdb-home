@@ -3,7 +3,7 @@ import { TypeResponseBody } from 'src/types/apiTypes';
 import { globalConfig } from 'src/config/globalConfig';
 import { ConfigKeys } from 'src/types/commonTypes';
 import { makeGetRequest } from 'src/utils/apiUtils';
-import { Environments } from 'src/constants/commonConstants';
+import { Environment } from 'src/constants/commonConstants';
 import { logToConsole } from 'src/utils/loggingUtils';
 
 /**
@@ -13,7 +13,7 @@ import { logToConsole } from 'src/utils/loggingUtils';
  * @throws Will throw an error if the request fails.
  */
 export const getFeature = async (id: string): Promise<TypeResponseBody> => {
-    const environment = globalConfig.get(ConfigKeys.Environment) as Environments;
+    const environment = globalConfig.get(ConfigKeys.Environment) as Environment;
     const apiBaseUrl = WebApiBaseUrl[environment];
 
     const requestUrl = [apiBaseUrl, featureEndpoints.getFeature.toLowerCase(), id].join('/');

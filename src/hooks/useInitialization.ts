@@ -3,6 +3,9 @@ import { globalConfig } from 'src/config/globalConfig';
 import { ConfigKeys, InitializationArea } from 'src/types/commonTypes';
 import { InitializationError } from 'src/classes/InitializationError';
 import { getEnvironmentFromUrl } from 'src/utils/commonUtils';
+import { LocalStorageKeyTheme } from 'src/constants/commonConstants';
+import { Theme } from 'src/styles/themes';
+import { useExperienceStore } from 'src/stores/experienceStore';
 
 /**
  * Initializes the environment.
@@ -35,6 +38,40 @@ const initializeEnvironment = () => {
 };
 
 /**
+ * Initializes the environment.
+ * @returns A promise that resolves with the environment if found, or rejects with an error if not found.
+ */
+const initializeTheme = () => {
+    return new Promise((resolve, reject) => {
+        try {
+            const themeInLocalStorage = localStorage.getItem(LocalStorageKeyTheme);
+            if (themeInLocalStorage) {
+                if (
+                    themeInLocalStorage === Theme.LightTheme ||
+                    themeInLocalStorage === Theme.DarkTheme
+                ) {
+                    resolve(themeInLocalStorage);
+                } else {
+                    localStorage.setItem(LocalStorageKeyTheme, Theme.LightTheme);
+                    resolve(Theme.LightTheme);
+                }
+            } else {
+                localStorage.setItem(LocalStorageKeyTheme, Theme.LightTheme);
+                resolve(Theme.LightTheme);
+            }
+        } catch (error: unknown) {
+            reject(
+                new InitializationError(
+                    InitializationArea.Theme,
+                    'Could not initialize theme',
+                    error as Error,
+                ),
+            );
+        }
+    });
+};
+
+/**
  * React hook for initializing application-wide settings and configurations.
  * @returns
  *  An object containing:
@@ -43,6 +80,7 @@ const initializeEnvironment = () => {
  */
 export const useInitialization = () => {
     const [isLoading, setIsLoading] = useState<boolean>(true);
+    const { setExperience } = useExperienceStore();
     const [loadingErrors, setLoadingErrors] = useState<InitializationError[]>([]);
 
     /**
@@ -51,13 +89,15 @@ export const useInitialization = () => {
     const initializeAll = useCallback(async () => {
         try {
             globalConfig.set(ConfigKeys.Environment, await initializeEnvironment());
+
+            const theme = (await initializeTheme()) as Theme;
+            setExperience({ theme });
         } catch (error: unknown) {
-            // todo: have a standard error format
             setLoadingErrors((errors) => [...errors, error as InitializationError]);
         } finally {
             setIsLoading(false);
         }
-    }, []);
+    }, [setExperience]);
 
     useEffect(() => {
         initializeAll();

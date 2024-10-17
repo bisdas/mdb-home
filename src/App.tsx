@@ -2,47 +2,48 @@ import { AppSurface } from './App.styled';
 import { CommonUIComponents } from './components/shared/CommonUIComponents/CommonUIComponents';
 import { useInitialization } from './hooks/useInitialization';
 import './styles/globalStyles.scss';
-
-interface AppProps {
-    children: React.ReactElement;
-}
+import { Home } from './components/Home/Home';
+import { themeSelector, useExperienceStore } from './stores/experienceStore';
+import { ThemeProvider } from 'styled-components/macro';
 
 /**
  * App component.
- * @param props - The props for the App component.
  * @returns The rendered App component.
  */
-export const App = (props: AppProps) => {
+export const App = () => {
     const { isLoading, loadingErrors } = useInitialization();
-    const { children } = props;
+    const theme = useExperienceStore(themeSelector);
 
-    // todo: add loader component
     if (isLoading) {
-        return <AppSurface>Loading...</AppSurface>;
+        return (
+            <ThemeProvider theme={{ theme }}>
+                <AppSurface>Loading...</AppSurface>
+            </ThemeProvider>
+        );
     }
 
-    /**
-     * temporary implementation of showing errors,
-     * should be replaced with a proper mechanism later
-     */
     if (loadingErrors.length > 0) {
+        // todo: same error should not be printed twice
         return (
-            <AppSurface>
-                <h4>Initialization Error</h4>
-                <ul>
-                    {loadingErrors.map((error, index) => (
-                        <li key={index}>{error.message}</li>
-                    ))}
-                </ul>
-            </AppSurface>
+            <ThemeProvider theme={{ theme }}>
+                <AppSurface>
+                    <ul>
+                        {loadingErrors.map((error, index) => (
+                            <li key={index}>{error.message}</li>
+                        ))}
+                    </ul>
+                </AppSurface>
+            </ThemeProvider>
         );
     }
 
     return (
-        <>
-            <CommonUIComponents />
-            <AppSurface>{children}</AppSurface>
-        </>
+        <ThemeProvider theme={{ theme }}>
+            <AppSurface>
+                <CommonUIComponents />
+                <Home />
+            </AppSurface>
+        </ThemeProvider>
     );
 };
 

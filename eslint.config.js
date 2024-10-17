@@ -119,7 +119,7 @@ const eslintPluginReactRuleOverrides = {
  */
 const jsdocRuleOverrides = {
     'jsdoc/require-jsdoc': [
-        'error',
+        'warn',
         {
             enableFixer: false,
             require: {

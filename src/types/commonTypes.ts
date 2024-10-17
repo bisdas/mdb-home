@@ -7,6 +7,7 @@ export enum ConfigKeys {
 
 export enum InitializationArea {
     Environment = 'Environment',
+    Theme = 'Theme',
 }
 
 export interface InitializationError {
