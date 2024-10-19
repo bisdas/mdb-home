@@ -4,7 +4,7 @@ import { ConfigKeys, InitializationArea } from 'src/types/commonTypes';
 import { InitializationError } from 'src/classes/InitializationError';
 import { getEnvironmentFromUrl } from 'src/utils/commonUtils';
 import { LocalStorageKeyTheme } from 'src/constants/commonConstants';
-import { Theme } from 'src/styles/themes';
+import { Theme } from 'src/constants/experienceConstants';
 import { useExperienceStore } from 'src/stores/experienceStore';
 
 /**

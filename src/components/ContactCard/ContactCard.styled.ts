@@ -1,24 +1,21 @@
-import { Theme } from 'src/styles/themes';
+import { Theme } from 'src/constants/experienceConstants';
 import styled from 'styled-components/macro';
 
-const colorOptions = {
+const methodFontFamily = 'var(--default-font-family)';
+const themeSetting = {
     [Theme.LightTheme]: {
-        defaultIconBackground: '#ededed',
-        contactIconBackground: '#ededed',
-        contactMethodText: '#7d7d7d;',
-        contactAddressText: '#000000',
-        navigateIconBackground: '#000000',
+        defaultIconBackground: 'var(--default-light-theme-icon-background-color)',
+        contactIconBackground: 'var(--default-light-theme-icon-background-color)',
+        contactMethodText: 'var(--default-light-theme-heading-level-5-color)',
+        contactAddressText: 'var(--default-light-theme-heading-level-6-color)',
     },
     [Theme.DarkTheme]: {
-        defaultIconBackground: '#000000',
-        contactIconBackground: '#000000',
-        contactMethodText: '#fefefe',
-        contactAddressText: '#fefefe',
-        navigateIconBackground: '#fefefe',
+        defaultIconBackground: 'var(--default-dark-theme-icon-background-color)',
+        contactIconBackground: 'var(--default-dark-theme-icon-background-color)',
+        contactMethodText: 'var(--default-dark-theme-heading-level-5-color)',
+        contactAddressText: 'var(--default-dark-theme-heading-level-6-color)',
     },
 };
-
-// todo: complete dark theme colors
 
 export const OuterWrapper = styled.div`
     display: flex;
@@ -29,7 +26,7 @@ export const DefaultIconBox = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${({ theme }: { theme: { theme: keyof typeof colorOptions } }) => colorOptions[theme.theme].defaultIconBackground} };
+    background-color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].defaultIconBackground} };
     height: 3.2rem;
     width: 3.2rem;
     border-radius: 0.4rem;
@@ -45,13 +42,13 @@ export const MethodDetails = styled.div`
 `;
 
 export const Method = styled.div`
-    font-family: var(--default-font-family);
+    font-family: ${methodFontFamily};
     font-weight: 700;
     font-size: 1.4rem;
-    color: ${({ theme }: { theme: { theme: keyof typeof colorOptions } }) =>
-        colorOptions[theme.theme].contactMethodText};
+    color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) =>
+        themeSetting[theme.theme].contactMethodText};
     flex: 1;
-    margin-top: -0.2rem;
+    margin-top: -0.1rem;
     pointer-events: none;
 `;
 
@@ -60,10 +57,8 @@ export const Address = styled.div`
 
     & a {
         text-decoration: none;
-        color: ${({ theme }) =>
-            theme.theme === Theme.LightTheme
-                ? 'var(--default-light-theme-font-color)'
-                : 'var(--default-dark-theme-font-color)'};
+        color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) =>
+            themeSetting[theme.theme].contactAddressText};
         font-size: 1.2rem;
         font-weight: 600;
     }

@@ -1,5 +1,5 @@
 /* eslint-disable jsdoc/require-jsdoc */
-import { Theme } from 'src/styles/themes';
+import { Theme } from 'src/constants/experienceConstants';
 import { create } from 'zustand';
 
 interface Experience {
