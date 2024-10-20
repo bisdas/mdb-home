@@ -1,7 +1,7 @@
 import { Block } from 'src/components/Block/Block';
 import { OuterWrapper } from './Home.styled';
 import { ContactCard } from 'src/components/ContactCard/ContactCard';
-import EmailIcon from 'src/assets/icons/email.svg';
+import EmailIcon from 'src/components/EmailIcon';
 import { ContactMethod } from 'src/constants/commonConstants';
 import { useExperienceStore } from 'src/stores/experienceStore';
 import { Theme } from 'src/constants/experienceConstants';
@@ -35,13 +35,14 @@ export const Home = () => {
             <Block title="Contact us" padding>
                 <ContactCard
                     icon={
-                        // @ts-expect-error width prop is not recognized
                         <EmailIcon
                             width="1.8em"
                             height="1.8em"
-                            style={{
-                                fill: `${experience.theme === Theme.DarkTheme ? '#ffffff' : '#000000'}`,
-                            }}
+                            color={
+                                experience.theme === Theme.LightTheme
+                                    ? 'var(--default-light-theme-icon-color)'
+                                    : 'var(--default-dark-theme-icon-color)'
+                            }
                         />
                     }
                     method={ContactMethod.Email}

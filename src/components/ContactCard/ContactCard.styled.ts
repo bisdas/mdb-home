@@ -67,4 +67,5 @@ export const Address = styled.div`
 export const NavigateIconBox = styled(DefaultIconBox)`
     background-color: transparent;
     width: 2rem;
+    opacity: 40%;
 `;
