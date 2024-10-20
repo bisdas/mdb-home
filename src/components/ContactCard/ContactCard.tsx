@@ -8,7 +8,9 @@ import {
     NavigateIconBox,
 } from './ContactCard.styled';
 import { ContactMethod } from 'src/constants/commonConstants';
-import RightArrowIcon from 'src/assets/icons/arrow-next-right-icon.svg';
+import ArrowNextRightIcon from 'src/components/ArrowNextRightIcon';
+import { Theme } from 'src/constants/experienceConstants';
+import { useExperienceStore } from 'src/stores/experienceStore';
 
 interface ContactCardProps {
     icon: React.ReactNode;
@@ -27,6 +29,7 @@ interface ContactCardProps {
  * @returns The rendered component.
  */
 export const ContactCard = ({ icon, method, address, addressText }: ContactCardProps) => {
+    const { experience } = useExperienceStore();
     let addressNode = null;
 
     /* based on the method, create the address node */
@@ -42,8 +45,15 @@ export const ContactCard = ({ icon, method, address, addressText }: ContactCardP
                 <Address>{addressNode}</Address>
             </MethodDetails>
             <NavigateIconBox>
-                {/* @ts-expect-error width prop is not recognized */}
-                <RightArrowIcon width="1em" height="1em" style={{ opacity: '40%' }} />
+                <ArrowNextRightIcon
+                    width="1em"
+                    height="1em"
+                    color={
+                        experience.theme === Theme.LightTheme
+                            ? 'var(--default-light-theme-icon-color)'
+                            : 'var(--default-dark-theme-icon-color)'
+                    }
+                />
             </NavigateIconBox>
         </OuterWrapper>
     );
