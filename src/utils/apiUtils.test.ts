@@ -99,9 +99,7 @@ describe('makeGetRequest', () => {
     const spyMergeHeaders = vi.spyOn(apiUtils, 'mergeHeaders');
     const spyHandleResponse = vi.spyOn(apiUtils, 'handleResponse');
     beforeEach(() => {
-        spyMapParamsToQueryString.mockImplementationOnce(
-            (): string => 'param1=value1&param2=value2',
-        );
+        spyMapParamsToQueryString.mockImplementationOnce((): string => 'param1=value1&param2=value2');
         spyGetCommonHeaders.mockImplementationOnce((): typeof mockCommonHeader => mockCommonHeader);
         spyMergeHeaders.mockImplementationOnce(() => mockMergeHeaders);
         spyHandleResponse.mockImplementationOnce((): typeof mockResponse.data => mockResponse.data);
@@ -238,9 +236,7 @@ describe('makeDeleteRequest', () => {
         spyGetCommonHeaders = vi
             .spyOn(apiUtils, 'getCommonHeaders')
             .mockImplementationOnce((): typeof mockCommonHeader => mockCommonHeader);
-        spyMergeHeaders = vi
-            .spyOn(apiUtils, 'mergeHeaders')
-            .mockImplementationOnce(() => mockMergeHeaders);
+        spyMergeHeaders = vi.spyOn(apiUtils, 'mergeHeaders').mockImplementationOnce(() => mockMergeHeaders);
         spyHandleResponse = vi
             .spyOn(apiUtils, 'handleResponse')
             .mockImplementationOnce((): typeof mockResponse.data => mockResponse.data);

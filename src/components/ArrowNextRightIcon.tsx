@@ -6,6 +6,14 @@ interface ArrowNextRightIconProps {
     color?: string;
 }
 
+/**
+ * ArrowNextRightIcon component
+ * @param props - props
+ * @param props.width - The width of the icon.
+ * @param props.height - The height of the icon.
+ * @param props.color - The color of the icon.
+ * @returns The rendered component.
+ */
 const ArrowNextRightIcon: React.FC<ArrowNextRightIconProps> = ({
     width = '1em',
     height = '1em',

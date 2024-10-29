@@ -201,10 +201,7 @@ export const makePutRequest = async (
  * @param headers - The headers to include in the request.
  * @returns The data from the response.
  */
-export const makeDeleteRequest = async (
-    url: string,
-    headers: TypeApiHeaders,
-): Promise<AxiosResponse> => {
+export const makeDeleteRequest = async (url: string, headers: TypeApiHeaders): Promise<AxiosResponse> => {
     const commonHeaders = apiUtils.getCommonHeaders();
     const requestHeaders = apiUtils.mergeHeaders(commonHeaders, headers || {});
 

@@ -5,9 +5,7 @@ import './styles/globalStyles.scss';
 import { Home } from './components/Home/Home';
 import { themeSelector, useExperienceStore } from './stores/experienceStore';
 import { ThemeProvider } from 'styled-components/macro';
-import { Theme } from './constants/experienceConstants';
-import { useEffect } from 'react';
-import { LocalStorageKeyTheme } from './constants/commonConstants';
+import { useThemeRefresh } from './hooks/useThemeRefresh';
 
 /**
  * App component.
@@ -16,21 +14,7 @@ import { LocalStorageKeyTheme } from './constants/commonConstants';
 export const App = () => {
     const { isLoading, loadingErrors } = useInitialization();
     const theme = useExperienceStore(themeSelector);
-
-    useEffect(() => {
-        if (!isLoading) {
-            localStorage.setItem(LocalStorageKeyTheme, theme);
-            // todo: find a better way to set the background color
-            document.body.style.backgroundColor =
-                theme === Theme.LightTheme
-                    ? 'var(--default-light-theme-background-color)'
-                    : 'var(--default-dark-theme-background-color)';
-            document.body.style.color =
-                theme === Theme.LightTheme
-                    ? 'var(--default-light-theme-font-color)'
-                    : 'var(--default-dark-theme-font-color)';
-        }
-    }, [theme, isLoading]);
+    useThemeRefresh(isLoading, theme);
 
     if (isLoading) {
         return (

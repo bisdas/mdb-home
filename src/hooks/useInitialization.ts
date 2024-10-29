@@ -18,21 +18,10 @@ const initializeEnvironment = () => {
             if (environment) {
                 resolve(environment);
             } else {
-                reject(
-                    new InitializationError(
-                        InitializationArea.Environment,
-                        'Environment not found.',
-                    ),
-                );
+                reject(new InitializationError(InitializationArea.Environment, 'Environment not found.'));
             }
         } catch (error: unknown) {
-            reject(
-                new InitializationError(
-                    InitializationArea.Environment,
-                    'Environment not found.',
-                    error as Error,
-                ),
-            );
+            reject(new InitializationError(InitializationArea.Environment, 'Environment not found.', error as Error));
         }
     });
 };
@@ -46,10 +35,7 @@ const initializeTheme = () => {
         try {
             const themeInLocalStorage = localStorage.getItem(LocalStorageKeyTheme);
             if (themeInLocalStorage) {
-                if (
-                    themeInLocalStorage === Theme.LightTheme ||
-                    themeInLocalStorage === Theme.DarkTheme
-                ) {
+                if (themeInLocalStorage === Theme.LightTheme || themeInLocalStorage === Theme.DarkTheme) {
                     resolve(themeInLocalStorage);
                 } else {
                     localStorage.setItem(LocalStorageKeyTheme, Theme.LightTheme);
@@ -60,13 +46,7 @@ const initializeTheme = () => {
                 resolve(Theme.LightTheme);
             }
         } catch (error: unknown) {
-            reject(
-                new InitializationError(
-                    InitializationArea.Theme,
-                    'Could not initialize theme',
-                    error as Error,
-                ),
-            );
+            reject(new InitializationError(InitializationArea.Theme, 'Could not initialize theme', error as Error));
         }
     });
 };
