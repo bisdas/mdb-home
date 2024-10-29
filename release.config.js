@@ -84,10 +84,7 @@ export default {
                             ':fast_forward: Performance',
                             ':package: Maintenance',
                         ];
-                        return (
-                            sectionTitles.indexOf(groupA.title) -
-                            sectionTitles.indexOf(groupB.title)
-                        );
+                        return sectionTitles.indexOf(groupA.title) - sectionTitles.indexOf(groupB.title);
                     },
                 },
             },

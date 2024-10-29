@@ -203,10 +203,7 @@ export default [
             'no-relative-import-paths': eslintPluginNoRelativeImportPaths,
         },
         rules: {
-            'no-relative-import-paths/no-relative-import-paths': [
-                'warn',
-                { allowSameFolder: true },
-            ],
+            'no-relative-import-paths/no-relative-import-paths': ['warn', { allowSameFolder: true }],
         },
     },
     {

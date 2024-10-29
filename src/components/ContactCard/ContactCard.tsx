@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-    OuterWrapper,
-    MethodIconBox,
-    MethodDetails,
-    Method,
-    Address,
-    NavigateIconBox,
-} from './ContactCard.styled';
+import { OuterWrapper, MethodIconBox, MethodDetails, Method, Address, NavigateIconBox } from './ContactCard.styled';
 import { ContactMethod } from 'src/constants/commonConstants';
 import ArrowNextRightIcon from 'src/components/ArrowNextRightIcon';
 import { Theme } from 'src/constants/experienceConstants';
@@ -35,6 +28,8 @@ export const ContactCard = ({ icon, method, address, addressText }: ContactCardP
     /* based on the method, create the address node */
     if (method === ContactMethod.Email) {
         addressNode = <a href={`mailto:${address}`}>{addressText}</a>;
+    } else if (method === ContactMethod.Phone) {
+        addressNode = <a href={`tel:${address}`}>{addressText}</a>;
     }
 
     return (

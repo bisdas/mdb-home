@@ -1,3 +1,6 @@
+export const LocalStorageKeyTheme = 'mdb-home-theme';
+export const ProductImagesDirectory = 'productImages';
+
 export enum Environment {
     Production = 'Production',
     Development = 'Development',
@@ -6,6 +9,5 @@ export enum Environment {
 
 export enum ContactMethod {
     Email = 'Email',
+    Phone = 'Phone',
 }
-
-export const LocalStorageKeyTheme = 'mdb-home-theme';
