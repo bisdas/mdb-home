@@ -4,6 +4,7 @@ import { useExperienceStore } from 'src/stores/experienceStore';
 import { Theme } from 'src/constants/experienceConstants';
 import { MoreProducts } from 'src/components/MoreProducts/MoreProducts';
 import { ContactUs } from 'src/components/ContactUs/ContactUs';
+import { OurPages } from 'src/components/OurPages/OurPages';
 
 /**
  * Home component.
@@ -28,6 +29,9 @@ export const Home = () => {
                         Toggle theme
                     </button>
                 </div>
+            </Block>
+            <Block title="Our Pages" padding>
+                <OurPages />
             </Block>
             <Block title="More products" padding>
                 <MoreProducts />

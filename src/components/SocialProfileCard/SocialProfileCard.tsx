@@ -1,50 +1,50 @@
 import {
     OuterWrapper,
-    ProductImageBox,
-    ProductDetails,
-    Brand,
-    Title,
+    PlatformIconBox,
+    PlatformDetails,
+    Name,
+    Followers,
     NavigateIconBox,
-    ProductImageContent,
     Anchor,
     ContentWrapper,
-} from './ProductLineCard.styled';
+} from './SocialProfileCard.styled';
 import ArrowNextRightIcon from 'src/components/ArrowNextRightIcon';
+import { SocialPlatform } from 'src/constants/commonConstants';
 import { Theme } from 'src/constants/experienceConstants';
 import { useExperienceStore } from 'src/stores/experienceStore';
+import { SocialPlatformIcon } from 'src/components/SocialPlatformIcon/SocialPlatformIcon';
 
-interface ProductLineCardProps {
-    brand: string;
-    title: string;
-    imageUrl: string;
+interface SocialProfileCardProps {
+    name: string;
+    platform: SocialPlatform;
+    followers: string;
     link: string;
-    backgroundColor: string;
 }
 
 /**
- * ProductLineCard component
+ * SocialProfileCard component
  * @param props - props
- * @param props.imageUrl - The image URL of the product.
- * @param props.brand - The brand of the product.
- * @param props.title - The title of the product.
- * @param props.link - The link to the product.
+ * @param props.name - The name of the profile.
+ * @param props.platform - The platform of the profile.
+ * @param props.followers - The number of followers of the profile.
+ * @param props.link - The link to the profile.
  * @returns The rendered component.
  */
-export const ProductLineCard = (props: ProductLineCardProps) => {
-    const { imageUrl, brand, title, link } = props;
+export const SocialProfileCard = (props: SocialProfileCardProps) => {
+    const { name, platform, followers, link } = props;
     const { experience } = useExperienceStore();
 
     return (
         <OuterWrapper>
             <Anchor href={link} target="_blank">
                 <ContentWrapper>
-                    <ProductImageBox>
-                        <ProductImageContent imageUrl={imageUrl} />
-                    </ProductImageBox>
-                    <ProductDetails>
-                        <Brand>{brand}</Brand>
-                        <Title>{title}</Title>
-                    </ProductDetails>
+                    <PlatformIconBox>
+                        <SocialPlatformIcon platform={platform} />
+                    </PlatformIconBox>
+                    <PlatformDetails>
+                        <Name>{name}</Name>
+                        <Followers>{followers}</Followers>
+                    </PlatformDetails>
                     <NavigateIconBox>
                         <ArrowNextRightIcon
                             width="1em"
