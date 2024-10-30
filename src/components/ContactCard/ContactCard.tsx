@@ -1,12 +1,21 @@
-import React from 'react';
-import { OuterWrapper, MethodIconBox, MethodDetails, Method, Address, NavigateIconBox } from './ContactCard.styled';
+import {
+    OuterWrapper,
+    MethodIconBox,
+    MethodDetails,
+    Method,
+    Address,
+    NavigateIconBox,
+    Anchor,
+    ContentWrapper,
+} from './ContactCard.styled';
 import { ContactMethod } from 'src/constants/commonConstants';
 import ArrowNextRightIcon from 'src/components/ArrowNextRightIcon';
 import { Theme } from 'src/constants/experienceConstants';
 import { useExperienceStore } from 'src/stores/experienceStore';
+import { ContactMethodIcon } from 'src/components/ContactMethodIcon/ContactMethodIcon';
+import { useMemo } from 'react';
 
 interface ContactCardProps {
-    icon: React.ReactNode;
     method: ContactMethod;
     address: string;
     addressText: string;
@@ -15,41 +24,50 @@ interface ContactCardProps {
 /**
  * ContactCard component
  * @param props - props
- * @param props.icon - The icon to display for the contact method.
  * @param props.method - The contact method (e.g., Email, Phone).
  * @param props.address - The address or contact information.
  * @param props.addressText - The text to display for the address.
  * @returns The rendered component.
  */
-export const ContactCard = ({ icon, method, address, addressText }: ContactCardProps) => {
+export const ContactCard = ({ method, address, addressText }: ContactCardProps) => {
     const { experience } = useExperienceStore();
-    let addressNode = null;
 
-    /* based on the method, create the address node */
-    if (method === ContactMethod.Email) {
-        addressNode = <a href={`mailto:${address}`}>{addressText}</a>;
-    } else if (method === ContactMethod.Phone) {
-        addressNode = <a href={`tel:${address}`}>{addressText}</a>;
-    }
+    const anchorHref = useMemo(() => {
+        if (method === ContactMethod.Email) {
+            return `mailto:${address}`;
+        }
+
+        if (method === ContactMethod.Phone) {
+            return `tel:${address}`;
+        }
+
+        return address;
+    }, [method, address]);
 
     return (
         <OuterWrapper>
-            <MethodIconBox>{icon}</MethodIconBox>
-            <MethodDetails>
-                <Method>{method}</Method>
-                <Address>{addressNode}</Address>
-            </MethodDetails>
-            <NavigateIconBox>
-                <ArrowNextRightIcon
-                    width="1em"
-                    height="1em"
-                    color={
-                        experience.theme === Theme.LightTheme
-                            ? 'var(--default-light-theme-icon-color)'
-                            : 'var(--default-dark-theme-icon-color)'
-                    }
-                />
-            </NavigateIconBox>
+            <Anchor href={anchorHref} target="_blank">
+                <ContentWrapper>
+                    <MethodIconBox>
+                        <ContactMethodIcon method={method} />
+                    </MethodIconBox>
+                    <MethodDetails>
+                        <Method>{method}</Method>
+                        <Address>{addressText}</Address>
+                    </MethodDetails>
+                    <NavigateIconBox>
+                        <ArrowNextRightIcon
+                            width="1em"
+                            height="1em"
+                            color={
+                                experience.theme === Theme.LightTheme
+                                    ? 'var(--default-light-theme-icon-color)'
+                                    : 'var(--default-dark-theme-icon-color)'
+                            }
+                        />
+                    </NavigateIconBox>
+                </ContentWrapper>
+            </Anchor>
         </OuterWrapper>
     );
 };

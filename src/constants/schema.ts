@@ -1,4 +1,4 @@
-import { ContactMethod } from './commonConstants';
+import { ContactMethod, SocialPlatform } from './commonConstants';
 
 export type ProductImage = {
     imageName: string;
@@ -19,4 +19,11 @@ export type ContactOption = {
     method: ContactMethod;
     address: string;
     addressText: string;
+};
+
+export type SocialProfile = {
+    name: string;
+    platform: SocialPlatform;
+    followers: string;
+    link: string;
 };

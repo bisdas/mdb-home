@@ -1,4 +1,4 @@
-import { ContactMethod } from 'src/constants/commonConstants';
+import { ContactMethod, SocialPlatform } from 'src/constants/commonConstants';
 import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
@@ -31,7 +31,7 @@ export const products: Product[] = [
         backgroundColor: '#ffffff',
     },
     {
-        id: '190012',
+        id: '190014',
         brand: 'Ghar Soaps',
         title: 'Magic Soap (Sandal Wood and Saffron Soap)',
         images: [
@@ -45,7 +45,7 @@ export const products: Product[] = [
         backgroundColor: '#ffffff',
     },
     {
-        id: '190013',
+        id: '190015',
         brand: 'mama earth',
         title: 'Onion Shampoo for Hair Fall Control and Hair Growth with Onion & Plant Keratin - 650 ml',
         images: [
@@ -59,7 +59,7 @@ export const products: Product[] = [
         backgroundColor: '#ffffff',
     },
     {
-        id: '190012',
+        id: '190016',
         brand: 'Ghar Soaps',
         title: 'Magic Soap (Sandal Wood and Saffron Soap)',
         images: [
@@ -84,5 +84,32 @@ export const contactOptions = [
         method: ContactMethod.Phone,
         address: '+919876122345',
         addressText: '9876122345',
+    },
+];
+
+export const socialProfiles = [
+    {
+        name: 'Instagram',
+        platform: SocialPlatform.Instagram,
+        followers: '1.2M',
+        link: 'https://www.instagram.com/mydelishbowl/',
+    },
+    {
+        name: 'YouTube',
+        platform: SocialPlatform.YouTube,
+        followers: '828K',
+        link: 'https://www.youtube.com/@mydelishbowl/',
+    },
+    {
+        name: 'Facebook',
+        platform: SocialPlatform.Facebook,
+        followers: '134K',
+        link: 'https://www.facebook.com/mydelishbowl/',
+    },
+    {
+        name: 'Threads',
+        platform: SocialPlatform.Threads,
+        followers: '522K',
+        link: 'https://www.threads.com/mydelishbowl/',
     },
 ];

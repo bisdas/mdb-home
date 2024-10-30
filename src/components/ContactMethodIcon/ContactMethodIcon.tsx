@@ -1,6 +1,6 @@
 import { useExperienceStore } from 'src/stores/experienceStore';
-import EmailIcon from './EmailIcon/EmailIcon';
-import { PhoneIcon } from './PhoneIcon/PhoneIcon';
+import { IconEmail } from 'src/components/shared/IconEmail/IconEmail';
+import { IconPhone } from 'src/components/shared/IconPhone/IconPhone';
 import { ContactMethod } from 'src/constants/commonConstants';
 import { Theme } from 'src/constants/experienceConstants';
 
@@ -20,7 +20,7 @@ export const ContactMethodIcon = (props: ContactMethodIconProps) => {
     switch (method) {
         case ContactMethod.Email:
             return (
-                <EmailIcon
+                <IconEmail
                     width="1.8em"
                     height="1.8em"
                     color={
@@ -32,7 +32,7 @@ export const ContactMethodIcon = (props: ContactMethodIconProps) => {
             );
         case ContactMethod.Phone:
             return (
-                <PhoneIcon
+                <IconPhone
                     width="1.8em"
                     height="1.8em"
                     color={
