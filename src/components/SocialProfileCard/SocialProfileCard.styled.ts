@@ -1,7 +1,6 @@
 import { Theme } from 'src/constants/experienceConstants';
 import styled from 'styled-components/macro';
 
-const nameFontFamily = 'var(--default-font-family)';
 const themeSetting = {
     [Theme.LightTheme]: {
         defaultIconBackground: 'var(--default-light-theme-icon-background-color)',
@@ -48,12 +47,10 @@ export const PlatformDetails = styled.div`
 `;
 
 export const Name = styled.div`
-    font-family: ${nameFontFamily};
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].nameText};
     flex: 1;
-    margin-top: -0.1rem;
     pointer-events: none;
 `;
 
