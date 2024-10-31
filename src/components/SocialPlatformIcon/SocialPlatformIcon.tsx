@@ -27,8 +27,8 @@ export const SocialPlatformIcon = (props: SocialPlatformIconProps) => {
                     height="2.4em"
                     color={
                         experience.theme === Theme.LightTheme
-                            ? 'var(--default-light-theme-icon-color)'
-                            : 'var(--default-dark-theme-icon-color)'
+                            ? 'var(--light-theme-instagram-color)'
+                            : 'var(--dark-theme-instagram-color)'
                     }
                 />
             );
@@ -39,8 +39,8 @@ export const SocialPlatformIcon = (props: SocialPlatformIconProps) => {
                     height="2.4em"
                     color={
                         experience.theme === Theme.LightTheme
-                            ? 'var(--default-light-theme-icon-color)'
-                            : 'var(--default-dark-theme-icon-color)'
+                            ? 'var(--light-theme-youtube-color)'
+                            : 'var(--dark-theme-youtube-color)'
                     }
                 />
             );
@@ -51,8 +51,8 @@ export const SocialPlatformIcon = (props: SocialPlatformIconProps) => {
                     height="2.4em"
                     color={
                         experience.theme === Theme.LightTheme
-                            ? 'var(--default-light-theme-icon-color)'
-                            : 'var(--default-dark-theme-icon-color)'
+                            ? 'var(--light-theme-facebook-color)'
+                            : 'var(--dark-theme-facebook-color)'
                     }
                 />
             );
@@ -63,8 +63,8 @@ export const SocialPlatformIcon = (props: SocialPlatformIconProps) => {
                     height="2.4em"
                     color={
                         experience.theme === Theme.LightTheme
-                            ? 'var(--default-light-theme-icon-color)'
-                            : 'var(--default-dark-theme-icon-color)'
+                            ? 'var(--light-theme-threads-color)'
+                            : 'var(--dark-theme-threads-color)'
                     }
                 />
             );
