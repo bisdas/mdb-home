@@ -4,13 +4,13 @@ import styled from 'styled-components/macro';
 const themeSetting = {
     [Theme.LightTheme]: {
         defaultIconBackground: 'var(--default-light-theme-icon-background-color)',
-        platformIconBackground: 'var(--default-light-theme-icon-background-color)',
+        platformIconBackground: 'var(--default-light-theme-image-background-color)',
         nameText: 'var(--default-light-theme-heading-level-6-color)',
         followersText: 'var(--default-light-theme-heading-level-6-color)',
     },
     [Theme.DarkTheme]: {
         defaultIconBackground: 'var(--default-dark-theme-icon-background-color)',
-        platformIconBackground: 'var(--default-dark-theme-icon-background-color)',
+        platformIconBackground: 'var(--default-dark-theme-image-background-color)',
         nameText: 'var(--default-dark-theme-heading-level-6-color)',
         followersText: 'var(--default-dark-theme-heading-level-6-color)',
     },

@@ -18,3 +18,9 @@ export enum SocialPlatform {
     Facebook = 'Facebook',
     Threads = 'Threads',
 }
+
+export enum DelishBowlCategory {
+    Food = 'Food',
+    Beauty = 'Beauty',
+    Lifestyle = 'Lifestyle',
+}

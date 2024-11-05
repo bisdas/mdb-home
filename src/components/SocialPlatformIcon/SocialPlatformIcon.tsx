@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 import { useExperienceStore } from 'src/stores/experienceStore';
 import { SocialPlatform } from 'src/constants/commonConstants';
 import { Theme } from 'src/constants/experienceConstants';
