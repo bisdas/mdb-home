@@ -1,4 +1,4 @@
-import { ContactMethod, SocialPlatform } from 'src/constants/commonConstants';
+import { ContactMethod, DelishBowlCategory, SocialPlatform } from 'src/constants/commonConstants';
 import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
@@ -6,6 +6,7 @@ export const products: Product[] = [
         id: '190012',
         brand: 'Ghar Soaps',
         title: 'Magic Soap (Sandal Wood and Saffron Soap)',
+        isFeatured: true,
         images: [
             {
                 imageName: '190012-001.png',
@@ -15,11 +16,13 @@ export const products: Product[] = [
         ],
         link: 'https://www.gharsoaps.shop/',
         backgroundColor: '#ffffff',
+        categories: [DelishBowlCategory.Beauty, DelishBowlCategory.Lifestyle],
     },
     {
         id: '190013',
         brand: 'mama earth',
         title: 'Onion Shampoo for Hair Fall Control and Hair Growth with Onion & Plant Keratin - 650 ml',
+        isFeatured: true,
         images: [
             {
                 imageName: '190013-001.png',
@@ -29,11 +32,13 @@ export const products: Product[] = [
         ],
         link: 'https://mamaearth.in/',
         backgroundColor: '#ffffff',
+        categories: [DelishBowlCategory.Food, DelishBowlCategory.Beauty],
     },
     {
         id: '190014',
         brand: 'Ghar Soaps',
         title: 'Magic Soap (Sandal Wood and Saffron Soap)',
+        isFeatured: true,
         images: [
             {
                 imageName: '190012-001.png',
@@ -43,11 +48,13 @@ export const products: Product[] = [
         ],
         link: 'https://www.gharsoaps.shop/',
         backgroundColor: '#ffffff',
+        categories: [DelishBowlCategory.Food, DelishBowlCategory.Lifestyle],
     },
     {
         id: '190015',
         brand: 'mama earth',
         title: 'Onion Shampoo for Hair Fall Control and Hair Growth with Onion & Plant Keratin - 650 ml',
+        isFeatured: true,
         images: [
             {
                 imageName: '190013-001.png',
@@ -57,11 +64,13 @@ export const products: Product[] = [
         ],
         link: 'https://mamaearth.in/',
         backgroundColor: '#ffffff',
+        categories: [DelishBowlCategory.Beauty, DelishBowlCategory.Lifestyle],
     },
     {
         id: '190016',
         brand: 'Ghar Soaps',
         title: 'Magic Soap (Sandal Wood and Saffron Soap)',
+        isFeatured: false,
         images: [
             {
                 imageName: '190012-001.png',
@@ -71,6 +80,7 @@ export const products: Product[] = [
         ],
         link: 'https://www.gharsoaps.shop/',
         backgroundColor: '#ffffff',
+        categories: [DelishBowlCategory.Beauty, DelishBowlCategory.Lifestyle],
     },
 ];
 

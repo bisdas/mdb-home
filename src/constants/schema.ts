@@ -1,4 +1,4 @@
-import { ContactMethod, SocialPlatform } from './commonConstants';
+import { ContactMethod, DelishBowlCategory, SocialPlatform } from './commonConstants';
 
 export type ProductImage = {
     imageName: string;
@@ -10,9 +10,11 @@ export type Product = {
     id: string;
     brand: string;
     title: string;
+    isFeatured?: boolean;
     images: ProductImage[];
     link: string;
     backgroundColor: string;
+    categories: DelishBowlCategory[];
 };
 
 export type ContactOption = {

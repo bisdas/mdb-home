@@ -4,13 +4,13 @@ import styled from 'styled-components/macro';
 const themeSetting = {
     [Theme.LightTheme]: {
         defaultIconBackground: 'var(--default-light-theme-icon-background-color)',
-        productImageBackground: 'var(--default-light-theme-icon-background-color)',
+        productImageBackground: 'var(--default-light-theme-image-background-color)',
         brandText: 'var(--default-light-theme-heading-level-6-color)',
         titleText: 'var(--default-light-theme-heading-level-6-color)',
     },
     [Theme.DarkTheme]: {
         defaultIconBackground: 'var(--default-dark-theme-icon-background-color)',
-        productImageBackground: 'var(--default-dark-theme-icon-background-color)',
+        productImageBackground: 'var(--default-dark-theme-image-background-color)',
         brandText: 'var(--default-dark-theme-heading-level-6-color)',
         titleText: 'var(--default-dark-theme-heading-level-6-color)',
     },
@@ -32,7 +32,6 @@ export const DefaultIconBox = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].defaultIconBackground} };
-    background
     height: 4.2rem;
     width: 4.2rem;
     border-radius: 0.4rem;
