@@ -12,10 +12,18 @@ export const useThemeRefresh = (isLoading: boolean, theme: Theme) => {
         if (!isLoading) {
             localStorage.setItem(LocalStorageKeyTheme, theme);
             // todo: find a better way to set the background color
+            document.documentElement.style.backgroundColor =
+                theme === Theme.LightTheme
+                    ? 'var(--default-light-theme-background-color)'
+                    : 'var(--default-dark-theme-background-color)';
             document.body.style.backgroundColor =
                 theme === Theme.LightTheme
                     ? 'var(--default-light-theme-background-color)'
                     : 'var(--default-dark-theme-background-color)';
+            document.documentElement.style.color =
+                theme === Theme.LightTheme
+                    ? 'var(--default-light-theme-font-color)'
+                    : 'var(--default-dark-theme-font-color)';
             document.body.style.color =
                 theme === Theme.LightTheme
                     ? 'var(--default-light-theme-font-color)'
