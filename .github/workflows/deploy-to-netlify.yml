@@ -35,13 +35,4 @@ jobs:
         id: netlify_deploy
         run: |
           netlify deploy --dir dist --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_API_TOKEN }} > deploy_output.txt
-
-      - name: Generate URL Preview
-        id: url_preview
-        run: |
-          echo "NETLIFY_PREVIEW_URL=$(cat deploy_output.txt | grep 'Website draft URL: ' | cut -d' ' -f4)" >> $GITHUB_OUTPUT
-
-      - name: Add Preview URL as PR Comment
-        uses: thollander/actions-comment-pull-request@v3
-        with:
-          message: "Preview URL: ${{ steps.url_preview.outputs.NETLIFY_PREVIEW_URL }}"
+          echo "NETLIFY_PREVIEW_URL=$(cat deploy_output.txt | grep 'Website draft URL: ' | cut -d' ' -f4)"
