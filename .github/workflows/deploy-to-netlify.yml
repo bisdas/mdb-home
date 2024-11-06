@@ -51,24 +51,28 @@ jobs:
         with:
           script: |
             async function comment(){
-              const result = await github.rest.repos.listPullRequestsAssociatedWithCommit({
+            const result = await github.rest.repos.listPullRequestsAssociatedWithCommit({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 commit_sha: context.sha,
-              })
-
-              const issueNumber = result.data[0].number
-
-              if(issueNumber){
-                await github.rest.issues.createComment({
-                  issue_number: issueNumber,
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  body: 'Preview URL: ' + process.env.NETLIFY_PREVIEW_URL
-                })
-              } else {
-                console.log('No PR found for commit ' + context.sha)
-              }
+            })
+  
+            if (result.data.length > 0) {
+                const issueNumber = result.data[0].number
+  
+                if(issueNumber){
+                    await github.rest.issues.createComment({
+                      issue_number: issueNumber,
+                      owner: context.repo.owner,
+                      repo: context.repo.repo,
+                      body: 'Preview URL: ' + process.env.NETLIFY_PREVIEW_URL
+                    })
+                } else {
+                    console.log('No PR found for commit ' + context.sha)
+                }
+            } else {
+                  console.log('No PRs associated with commit ' + context.sha)
+                }
             }
-
+  
             comment()
