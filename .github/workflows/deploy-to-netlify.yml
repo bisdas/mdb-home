@@ -39,22 +39,9 @@ jobs:
       - name: Generate URL Preview
         id: url_preview
         run: |
-          NETLIFY_PREVIEW_URL=$(cat deploy_output.txt | grep "Website draft URL: " | cut -d' ' -f4)
-          echo "NETLIFY_PREVIEW_URL=$NETLIFY_PREVIEW_URL" >> "$GITHUB_OUTPUT"
+          echo "NETLIFY_PREVIEW_URL=$(cat deploy_output.txt | grep 'Website draft URL: ' | cut -d' ' -f4)" >> $GITHUB_OUTPUT
 
       - name: Add Preview URL as PR Comment
-        uses: actions/github-script@v6
+        uses: thollander/actions-comment-pull-request@v3
         with:
-          script: |
-            const github = require('@actions/github');
-            const context = github.context;
-            const url = process.env.NETLIFY_PREVIEW_URL;
-            const prNumber = context.payload.pull_request.number;
-            github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: prNumber,
-                body: `Preview URL: ${url}`
-            });
-        env:
-            NETLIFY_PREVIEW_URL: ${{ steps.url_preview.outputs.NETLIFY_PREVIEW_URL }}
+          message: "Preview URL: ${{ steps.url_preview.outputs.NETLIFY_PREVIEW_URL }}"
