@@ -41,6 +41,10 @@
     --dark-theme-product-category-lifestyle-chip-color: #cb80fd;
 }
 
+* {
+    transition: background-color 0.2s ease-in-out;
+}
+
 html,
 body {
     font-family: var(--default-font-family);

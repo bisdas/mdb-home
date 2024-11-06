@@ -35,7 +35,7 @@ export const ToggleSwitch: React.FC<ToggleSwitchProps> = (props: ToggleSwitchPro
             <SwitchLabel>
                 <SwitchInput type="checkbox" checked={isSwitchOn} onChange={handleToggle} />
                 <Slider isOn={isSwitchOn}>
-                    <StateText isOn={isSwitchOn}>{isSwitchOn ? 'On' : 'Off'}</StateText>
+                    <StateText isOn={isSwitchOn}>{isSwitchOn ? 'ON' : 'OFF'}</StateText>
                 </Slider>
             </SwitchLabel>
         </SwitchContainer>
