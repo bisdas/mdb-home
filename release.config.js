@@ -1,5 +1,8 @@
 export default {
-    branches: [{ name: 'master' }, { name: 'dev', prerelease: 'beta' }],
+    branches: [
+        { name: 'master' },
+        { name: '*', prerelease: 'beta' },
+    ],
     plugins: [
         [
             '@semantic-release/commit-analyzer',
@@ -24,15 +27,14 @@ export default {
         ],
         '@semantic-release/release-notes-generator',
         '@semantic-release/changelog',
-        '@semantic-release/git',
-        '@semantic-release/github',
         [
             '@semantic-release/git',
             {
-                // eslint-disable-next-line no-template-curly-in-string
+                assets: ['CHANGELOG.md', 'package.json', 'package-lock.json', 'yarn.lock'],
                 message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
             },
         ],
+        '@semantic-release/github',
     ],
     ci: true,
 };
