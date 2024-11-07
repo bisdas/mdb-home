@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
       - name: Create Release
-        run: npx semantic-release --dry-run
+        run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # GH_TOKEN: ${{ secrets.CREATE_RELEASE_TOKEN }}
