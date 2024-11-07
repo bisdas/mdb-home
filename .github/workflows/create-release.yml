@@ -25,11 +25,7 @@ jobs:
       - name: Build
         run: npm run build
 
-  release:
-    runs-on: ubuntu-latest
-    needs: prepare
-    env:
-      GH_TOKEN: ${{ secrets.CREATE_RELEASE_TOKEN }}
-    steps:
-      - name: Run semantic-release
+      - name: Create Release
+        env:
+            GH_TOKEN: ${{ secrets.CREATE_RELEASE_TOKEN }}
         run: npx semantic-release
