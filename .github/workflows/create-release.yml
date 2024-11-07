@@ -1,0 +1,35 @@
+name: Create Release
+
+on:
+  pull_request: 
+    types: [opened, synchronize]
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Sanitize
+        run: yarn sanitize:check 
+
+      - name: Build
+        run: npm run build
+
+  release:
+    runs-on: ubuntu-latest
+    needs: prepare
+    env:
+      GH_TOKEN: ${{ secrets.CREATE_RELEASE_TOKEN }}
+    steps:
+      - name: Run semantic-release
+        run: npx semantic-release
