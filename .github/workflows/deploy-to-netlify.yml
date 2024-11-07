@@ -34,5 +34,5 @@ jobs:
       - name: Deploy to Netlify
         id: netlify_deploy
         run: |
-          netlify deploy --dir dist --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_API_TOKEN }} > deploy_output.txt
+          netlify deploy --dir dist --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_API_TOKEN }} --prod > deploy_output.txt
           echo "NETLIFY_PREVIEW_URL=$(cat deploy_output.txt | grep 'Website draft URL: ' | cut -d' ' -f4)"
