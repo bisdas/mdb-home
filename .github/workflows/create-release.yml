@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  prepare:
+  create-release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
