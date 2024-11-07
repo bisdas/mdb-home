@@ -1,0 +1,34 @@
+name: Create Release
+
+on: workflow_dispatch
+
+jobs:
+  release:
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Sanitize
+        run: yarn sanitize:check 
+
+      - name: Build
+        run: npm run build
+
+      - name: Create Release
+        run: npx semantic-release --dry-run
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GH_TOKEN: ${{ secrets.CREATE_RELEASE_TOKEN }}
