@@ -1,5 +1,5 @@
 export default {
-    branches: [{ name: 'master' }, { name: 'dev', prerelease: true }],
+    branches: [{ name: 'master' }, { name: 'dev', prerelease: 'beta' }],
     plugins: [
         [
             '@semantic-release/commit-analyzer',
@@ -22,73 +22,7 @@ export default {
                 ],
             },
         ],
-        [
-            '@semantic-release/release-notes-generator',
-            {
-                preset: 'conventionalcommits',
-                presetConfig: {
-                    types: [
-                        {
-                            type: 'feat',
-                            section: ':sparkles: New Features',
-                            hidden: false,
-                        },
-                        {
-                            type: 'fix',
-                            section: ':bug: Bug Fixes',
-                            hidden: false,
-                        },
-                        {
-                            type: 'docs',
-                            section: ':memo: Documentation',
-                            hidden: false,
-                        },
-                        {
-                            type: 'refactor',
-                            section: ':zap: Refactor',
-                            hidden: false,
-                        },
-                        {
-                            type: 'perf',
-                            section: ':fast_forward: Performance',
-                            hidden: false,
-                        },
-                        {
-                            type: 'test',
-                            section: ':white_check_mark: Tests',
-                            hidden: false,
-                        },
-                        {
-                            type: 'ci',
-                            section: ':repeat: CI',
-                            hidden: false,
-                        },
-                        {
-                            type: 'chore',
-                            section: ':package: Maintenance',
-                            hidden: false,
-                        },
-                    ],
-                },
-                writerOpts: {
-                    /**
-                     * Sort commit groups based on predefined section titles.
-                     * @param groupA - The first commit group to compare.
-                     * @param groupB - The second commit group to compare.
-                     * @returns - The comparison result.
-                     */
-                    commitGroupsSort: (groupA, groupB) => {
-                        const sectionTitles = [
-                            ':sparkles: New Features',
-                            ':bug: Bug Fixes',
-                            ':fast_forward: Performance',
-                            ':package: Maintenance',
-                        ];
-                        return sectionTitles.indexOf(groupA.title) - sectionTitles.indexOf(groupB.title);
-                    },
-                },
-            },
-        ],
+        '@semantic-release/release-notes-generator',
         '@semantic-release/changelog',
         '@semantic-release/git',
         '@semantic-release/github',
