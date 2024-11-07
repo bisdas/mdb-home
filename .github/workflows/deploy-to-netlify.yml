@@ -1,0 +1,38 @@
+name: Deploy website
+
+on: 
+    pull_request:
+        types: [opened, synchronize]
+
+env:
+  BRANCH_NAME: ${{ github.ref_name }}
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Netlify
+        run: npm install netlify-cli@17.37.2 -g
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Sanitize
+        run: yarn sanitize:check 
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Netlify
+        id: netlify_deploy
+        run: |
+          netlify deploy --dir dist --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_API_TOKEN }} > deploy_output.txt
+          echo "NETLIFY_PREVIEW_URL=$(cat deploy_output.txt | grep 'Website draft URL: ' | cut -d' ' -f4)"
