@@ -28,4 +28,4 @@ jobs:
       - name: Create Release
         env:
             GH_TOKEN: ${{ secrets.CREATE_RELEASE_TOKEN }}
-        run: npx semantic-release
+        run: npx semantic-release --dry-run
