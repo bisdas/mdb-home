@@ -95,7 +95,7 @@ export default {
             '@semantic-release/git',
             {
                 // eslint-disable-next-line no-template-curly-in-string
-                message: 'chore(release): [skip ci] ${nextRelease.version}\n\n${nextRelease.notes}',
+                message: 'chore(release): [skip ci] v${nextRelease.version} update changelog',
             },
         ],
     ],

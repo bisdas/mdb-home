@@ -1,3 +1,5 @@
+## [1.0.2-dev-update-style.1](https://github.com/bisdas/mdb-home/compare/v1.0.1...v1.0.2-dev-update-style.1) (2024-11-08)
+
 ## [1.0.1](https://github.com/bisdas/mdb-home/compare/v1.0.0...v1.0.1) (2024-11-08)
 
 ### :repeat: CI
