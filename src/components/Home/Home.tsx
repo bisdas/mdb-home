@@ -13,7 +13,7 @@ import { HomePageHeader } from 'src/components/HomePageHeader/HomePageHeader';
 export const Home = () => {
     return (
         <OuterWrapper>
-            <HomePageHeader />
+            <HomePageHeader  />
             <Block title="Featured Items" padding>
                 <FeaturedItems />
             </Block>
