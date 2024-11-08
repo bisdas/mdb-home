@@ -1,3 +1,9 @@
+## [1.0.1-dev-deploy.2](https://github.com/bisdas/mdb-home/compare/v1.0.1-dev-deploy.1...v1.0.1-dev-deploy.2) (2024-11-08)
+
+### :repeat: CI
+
+* update run name ([0ae3d82](https://github.com/bisdas/mdb-home/commit/0ae3d82795d69e1f3c878add23fbb490fd05ff64))
+
 ## [1.0.1-dev-deploy.1](https://github.com/bisdas/mdb-home/compare/v1.0.0...v1.0.1-dev-deploy.1) (2024-11-08)
 
 ### :repeat: CI
