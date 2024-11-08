@@ -1,5 +1,5 @@
 export default {
-    branches: [{ name: 'master' }, { name: { name: '/^dev([/-].*)?/', prerelease: true } }],
+    branches: [{ name: 'master' }, { name: '/^dev([/-].*)?/', prerelease: true }],
     plugins: [
         [
             '@semantic-release/commit-analyzer',
