@@ -1,4 +1,24 @@
-## 1.0.0-beta.1 (2024-11-08)
+## [1.0.0-dev-home-page-changes.3](https://github.com/bisdas/mdb-home/compare/v1.0.0-dev-home-page-changes.2...v1.0.0-dev-home-page-changes.3) (2024-11-08)
+
+### :repeat: CI
+
+* added run name ([1df816b](https://github.com/bisdas/mdb-home/commit/1df816b1e8e8b2de0a6b8d9d8b8345a4a3128ce7))
+
+## [1.0.0-dev-home-page-changes.2](https://github.com/bisdas/mdb-home/compare/v1.0.0-dev-home-page-changes.1...v1.0.0-dev-home-page-changes.2) (2024-11-08)
+
+### :bug: Bug Fixes
+
+* linting ([f9d80f1](https://github.com/bisdas/mdb-home/commit/f9d80f1ddef59486018cdbf129b626a1d988c55f))
+
+### :package: Maintenance
+
+* dev release config ([#25](https://github.com/bisdas/mdb-home/issues/25)) ([a90b120](https://github.com/bisdas/mdb-home/commit/a90b12082f5e39096811505e6caf1eed8821f766))
+
+## 1.0.0-dev-home-page-changes.1 (2024-11-08)
+
+### :memo: Documentation
+
+* reset changelog ([0b754e2](https://github.com/bisdas/mdb-home/commit/0b754e2c57cb37443c785d63c53f3273a8de1b04))
 
 ### :repeat: CI
 
@@ -26,6 +46,7 @@
 * update ci config ([2604fd6](https://github.com/bisdas/mdb-home/commit/2604fd6faed8e03808f2bb5ddd62fdde3f08df37))
 * update ci trigger ([c13f4fc](https://github.com/bisdas/mdb-home/commit/c13f4fc1017a015659243b4661fc8c71853c9cba))
 * update ci trigger ([d1ac9cc](https://github.com/bisdas/mdb-home/commit/d1ac9cc1bbd1535d3f292efbaa7eefe5387592a0))
+* update ci workflow ([91b1e44](https://github.com/bisdas/mdb-home/commit/91b1e447cb1d1d35eafc63e8f9f11389ec0216b4))
 * update ci workflow ([9ff84e3](https://github.com/bisdas/mdb-home/commit/9ff84e32efac8a741945314d8a10cc45a669f280))
 * update node version ([fa0cf6c](https://github.com/bisdas/mdb-home/commit/fa0cf6c152a1ee69882bb60b4991588cfe6982f5))
 * update packages ([ba05420](https://github.com/bisdas/mdb-home/commit/ba054208defb0e8232961b7959f3aa5355035b1f))
@@ -55,13 +76,17 @@
 * linting ([925b69b](https://github.com/bisdas/mdb-home/commit/925b69b5258fbec535efc579ee87d2f325a044ff))
 * multiple changes ([ad04363](https://github.com/bisdas/mdb-home/commit/ad04363350f0b4825118f4eb10e96eb470905513))
 * our pages and multiple other changes ([e6e39ff](https://github.com/bisdas/mdb-home/commit/e6e39ff4a29548e14a08dd6c9fa488b7b17ff716))
+* **release:** [skip ci] 1.0.0-beta.1 ([1d4a65b](https://github.com/bisdas/mdb-home/commit/1d4a65b5cd2ab00c7d5f6ea35b4819ee442d215f))
 * **release:** [skip ci] 1.0.0-beta.1 ([875572d](https://github.com/bisdas/mdb-home/commit/875572d9972c17d7a19ba30240a48537e5b7ed29))
 * **release:** [skip ci] 1.0.0-beta.2 ([8313906](https://github.com/bisdas/mdb-home/commit/83139068821060cf7d015cc82f606f2fbddf55fd))
+* **release:** [skip ci] 1.0.0-dev-home-page-changes.1 ([2f4452f](https://github.com/bisdas/mdb-home/commit/2f4452f3b4a4854478cbc4c668ee2636125627d7))
 * **release:** [skip ci] 1.0.0-dev.1 ([ccca873](https://github.com/bisdas/mdb-home/commit/ccca873ddd9654442a14b9ab44d5ba37ab808ed1))
 * **release:** [skip ci] 1.0.0-dev.1 ([e96f2c6](https://github.com/bisdas/mdb-home/commit/e96f2c6218dbbaa4e66dc419bc9767f83d9c03e9))
 * **release:** 1.0.0 [skip ci] ([e1083b7](https://github.com/bisdas/mdb-home/commit/e1083b771a9b11499c318baeeda045f6cf48e626))
 * **release:** 1.0.0-beta.1 [skip ci] ([76d674a](https://github.com/bisdas/mdb-home/commit/76d674a448fa5ad59fe114fa6c87e5e3c2fcf80a))
+* revert changes ([4e78e5f](https://github.com/bisdas/mdb-home/commit/4e78e5f8f0312f1f4858d0e8f54cb69f8a7403fa))
 * sycnc ([3f69373](https://github.com/bisdas/mdb-home/commit/3f6937345f878b47b5716a3a01498c0628c83621))
+* test ([3c3efac](https://github.com/bisdas/mdb-home/commit/3c3efacb1b4d0f22ef682574bbcfe1097330d3e3))
 * theme adjustments ([d1d7a76](https://github.com/bisdas/mdb-home/commit/d1d7a764475712e8ba9c928ea763997c39d30dce))
 * theme colors ([2725acb](https://github.com/bisdas/mdb-home/commit/2725acb57f9168a457da9ae2e0373138ffa88dc1))
 * theme customization ([c18fdab](https://github.com/bisdas/mdb-home/commit/c18fdabc661168d2fe9ce90cff960f9009053df2))
