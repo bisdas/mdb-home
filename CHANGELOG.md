@@ -1,3 +1,9 @@
+## [1.0.1-dev-deploy.1](https://github.com/bisdas/mdb-home/compare/v1.0.0...v1.0.1-dev-deploy.1) (2024-11-08)
+
+### :repeat: CI
+
+* prod deploy config changes ([cae0d80](https://github.com/bisdas/mdb-home/commit/cae0d80c7c07fef540b51e499b8a4c3c88fa38c1))
+
 ## 1.0.0 (2024-11-08)
 
 ### :repeat: CI
