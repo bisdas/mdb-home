@@ -5,7 +5,7 @@ on:
     branches:
       - '*'
 
-run-name: ${{ github.ref == 'refs/heads/master' && 'Create stable release' || 'Create beta release on ' }}${{ github.ref }}
+run-name: ${{ github.ref == 'refs/heads/master' && 'Create stable release' || 'Create beta release' }}
 
 jobs:
   release:
