@@ -1,3 +1,9 @@
+## [1.0.0-dev-home-page-changes.3](https://github.com/bisdas/mdb-home/compare/v1.0.0-dev-home-page-changes.2...v1.0.0-dev-home-page-changes.3) (2024-11-08)
+
+### :repeat: CI
+
+* added run name ([1df816b](https://github.com/bisdas/mdb-home/commit/1df816b1e8e8b2de0a6b8d9d8b8345a4a3128ce7))
+
 ## [1.0.0-dev-home-page-changes.2](https://github.com/bisdas/mdb-home/compare/v1.0.0-dev-home-page-changes.1...v1.0.0-dev-home-page-changes.2) (2024-11-08)
 
 ### :bug: Bug Fixes
