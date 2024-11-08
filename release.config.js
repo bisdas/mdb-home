@@ -1,7 +1,6 @@
 export default {
     branches: [
-        { name: 'master', prerelease: false },
-        { name: '*', prerelease: 'beta' },
+       
     ],
     plugins: [
         [

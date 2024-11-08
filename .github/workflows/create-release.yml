@@ -30,7 +30,17 @@ jobs:
       # - name: Build
       #   run: npm run build
 
+      # - name: Create Release
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: npx semantic-release
+
       - name: Create Release
-        run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ github.ref }}" == "refs/heads/master" ]; then
+            npx semantic-release
+          else
+            npx semantic-release --tag-format 'beta-${version}'
+          fi
