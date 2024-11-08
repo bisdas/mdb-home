@@ -1,3 +1,15 @@
+## [1.0.1](https://github.com/bisdas/mdb-home/compare/v1.0.0...v1.0.1) (2024-11-08)
+
+### :repeat: CI
+
+* prod deploy config changes ([cae0d80](https://github.com/bisdas/mdb-home/commit/cae0d80c7c07fef540b51e499b8a4c3c88fa38c1))
+* update run name ([0ae3d82](https://github.com/bisdas/mdb-home/commit/0ae3d82795d69e1f3c878add23fbb490fd05ff64))
+
+### :package: Maintenance
+
+* **release:** [skip ci] 1.0.1-dev-deploy.1 ([f268632](https://github.com/bisdas/mdb-home/commit/f268632df629a8c10a4cd90c1953a067f5448b61))
+* **release:** [skip ci] 1.0.1-dev-deploy.2 ([a7c2434](https://github.com/bisdas/mdb-home/commit/a7c2434e5cdeb86ff11efaad59b019821b42dcdc))
+
 ## [1.0.1-dev-deploy.2](https://github.com/bisdas/mdb-home/compare/v1.0.1-dev-deploy.1...v1.0.1-dev-deploy.2) (2024-11-08)
 
 ### :repeat: CI
