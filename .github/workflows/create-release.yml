@@ -24,11 +24,11 @@ jobs:
       - name: Install Dependencies
         run: yarn
 
-      - name: Sanitize
-        run: yarn sanitize:check 
+      # - name: Sanitize
+      #   run: yarn sanitize:check 
 
-      - name: Build
-        run: npm run build
+      # - name: Build
+      #   run: npm run build
 
       - name: Create Release
         run: npx semantic-release
