@@ -1,3 +1,13 @@
+## [1.0.0-dev-home-page-changes.2](https://github.com/bisdas/mdb-home/compare/v1.0.0-dev-home-page-changes.1...v1.0.0-dev-home-page-changes.2) (2024-11-08)
+
+### :bug: Bug Fixes
+
+* linting ([f9d80f1](https://github.com/bisdas/mdb-home/commit/f9d80f1ddef59486018cdbf129b626a1d988c55f))
+
+### :package: Maintenance
+
+* dev release config ([#25](https://github.com/bisdas/mdb-home/issues/25)) ([a90b120](https://github.com/bisdas/mdb-home/commit/a90b12082f5e39096811505e6caf1eed8821f766))
+
 ## 1.0.0-dev-home-page-changes.1 (2024-11-08)
 
 ### :memo: Documentation
