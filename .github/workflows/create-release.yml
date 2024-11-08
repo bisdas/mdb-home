@@ -5,6 +5,8 @@ on:
     branches:
       - '*'
 
+run-name: Create release on ${{ github.ref }}
+
 jobs:
   release:
     permissions:
