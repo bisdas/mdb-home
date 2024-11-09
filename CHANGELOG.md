@@ -1,3 +1,13 @@
+## [1.0.3-dev-update-style.1](https://github.com/bisdas/mdb-home/compare/v1.0.2...v1.0.3-dev-update-style.1) (2024-11-09)
+
+### :bug: Bug Fixes
+
+* fixed icon color in dark theme ([a9a85a1](https://github.com/bisdas/mdb-home/commit/a9a85a14f8ae8b1c1769ee0af93e9c70c4f866e9))
+
+### :package: Maintenance
+
+* **release:** [skip ci] v1.0.2-dev-update-style.2 update changelog ([18b16a3](https://github.com/bisdas/mdb-home/commit/18b16a38aa6b8379de61bc03b4f1aa10f10e7319))
+
 ## [1.0.2-dev-update-style.2](https://github.com/bisdas/mdb-home/compare/v1.0.2-dev-update-style.1...v1.0.2-dev-update-style.2) (2024-11-09)
 
 ### :bug: Bug Fixes
