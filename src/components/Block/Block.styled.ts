@@ -18,7 +18,7 @@ export const OuterWrapper = styled.div<{ padding?: boolean }>`
 
 export const TitleText = styled.div`
     font-family: var(--default-font-family);
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 800;
     color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].titleTextColor};
 `;

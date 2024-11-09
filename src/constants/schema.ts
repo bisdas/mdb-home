@@ -10,11 +10,12 @@ export type Product = {
     id: string;
     brand: string;
     title: string;
-    isFeatured?: boolean;
     images: ProductImage[];
     link: string;
     backgroundColor: string;
     categories: DelishBowlCategory[];
+    isFeatured?: boolean;
+    available: boolean;
 };
 
 export type ContactOption = {

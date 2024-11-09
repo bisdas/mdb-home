@@ -1,0 +1,45 @@
+name: Deploy to Netlify
+
+on: 
+    push:
+      branches:
+        - master
+    workflow_dispatch:
+      inputs:
+        release_tag:
+          type: string
+          required: true
+          description: Release tag
+
+run-name: Deploy ${{ inputs.release_tag }} to Dev
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with: 
+          ref: ${{ github.event.inputs.release_tag || 'master' }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Netlify
+        run: npm install netlify-cli@17.37.2 -g
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Sanitize
+        run: yarn sanitize:check 
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Netlify
+        run: |
+          netlify deploy --prod --dir dist --site ${{ secrets.DEV_NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_API_TOKEN }} > deploy_output.txt
+          echo "NETLIFY_PREVIEW_URL=$(cat deploy_output.txt | grep 'Website draft URL: ' | cut -d' ' -f4)"
