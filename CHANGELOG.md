@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/bisdas/mdb-home/compare/v1.0.1...v1.0.2) (2024-11-08)
+
+### :package: Maintenance
+
+* **release:** [skip ci] v1.0.2-dev-update-style.1 update changelog ([ceb3966](https://github.com/bisdas/mdb-home/commit/ceb3966098abff4073e1f9ea8fc02a4bcaedd60c))
+
 ## [1.0.2-dev-update-style.1](https://github.com/bisdas/mdb-home/compare/v1.0.1...v1.0.2-dev-update-style.1) (2024-11-08)
 
 ## [1.0.1](https://github.com/bisdas/mdb-home/compare/v1.0.0...v1.0.1) (2024-11-08)
