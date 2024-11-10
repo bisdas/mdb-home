@@ -8,7 +8,7 @@ export const SwitchContainer = styled.div`
 export const SwitchLabel = styled.label`
     position: relative;
     display: inline-block;
-    width: 6.2rem;
+    width: 6rem;
     height: 2rem;
 `;
 
@@ -32,14 +32,14 @@ export const Slider = styled.span<{ isOn: boolean }>`
     &:before {
         position: absolute;
         content: '';
-        height: 1.8rem;
-        width: 1.8rem;
-        left: 0.13rem;
-        bottom: 0.1rem;
+        height: 1.7rem;
+        width: 1.7rem;
+        left: 0.16rem;
+        bottom: 0.15rem;
         background-color: ${(props) => (props.isOn ? '#ffffff' : '#000000')};
         transition: 0.2s;
         border-radius: 50%;
-        transform: ${(props) => (props.isOn ? 'translateX(4.15rem)' : 'translateX(0)')};
+        transform: ${(props) => (props.isOn ? 'translateX(3.98rem)' : 'translateX(0)')};
     }
 `;
 
