@@ -1,11 +1,4 @@
-## [1.0.4](https://github.com/bisdas/mdb-home/compare/v1.0.3...v1.0.4) (2024-11-09)
-
-### :package: Maintenance
-
-* added content ([4296662](https://github.com/bisdas/mdb-home/commit/429666261fa2330b3b23e78683d1de944b0d2a66))
-* **release:** [skip ci] v1.0.4-dev-update-style.1 update changelog ([43a45d3](https://github.com/bisdas/mdb-home/commit/43a45d38d6308a0e012311b81db9b0d6f7957826))
-
-## [1.0.4-dev-update-style.1](https://github.com/bisdas/mdb-home/compare/v1.0.3...v1.0.4-dev-update-style.1) (2024-11-09)
+## [1.0.4-dev-relative-styles.1](https://github.com/bisdas/mdb-home/compare/v1.0.3...v1.0.4-dev-relative-styles.1) (2024-11-10)
 
 ### :package: Maintenance
 
