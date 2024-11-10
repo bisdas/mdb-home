@@ -197,36 +197,36 @@ export const contactOptions = [
         address: 'mydelishbowl.letterbox@gmail.com',
         addressText: 'mydelishbowl.letterbox@gmail.com',
     },
-    {
-        method: ContactMethod.Phone,
-        address: '+919876122345',
-        addressText: '9876122345',
-    },
+    // {
+    //     method: ContactMethod.Phone,
+    //     address: '+919876122345',
+    //     addressText: '9876122345',
+    // },
 ];
 
 export const socialProfiles = [
     {
         name: 'Instagram',
         platform: SocialPlatform.Instagram,
-        followers: '1.2M',
-        link: 'https://www.instagram.com/mydelishbowl/',
+        followers: '1.4M',
+        link: 'https://www.instagram.com/mydelishbowl',
     },
     {
         name: 'YouTube',
         platform: SocialPlatform.YouTube,
-        followers: '828K',
-        link: 'https://www.youtube.com/@mydelishbowl/',
+        followers: '819K',
+        link: 'https://www.youtube.com/@mydelishbowl',
     },
     {
         name: 'Facebook',
         platform: SocialPlatform.Facebook,
-        followers: '134K',
-        link: 'https://www.facebook.com/mydelishbowl/',
+        followers: '154K',
+        link: 'https://www.facebook.com/mydelishbowl',
     },
     {
         name: 'Threads',
         platform: SocialPlatform.Threads,
-        followers: '522K',
-        link: 'https://www.threads.com/mydelishbowl/',
+        followers: '163K',
+        link: 'https://www.threads.net/mydelishbowl',
     },
 ];
