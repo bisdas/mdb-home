@@ -1,3 +1,9 @@
+## [1.0.4-dev-relative-styles.1](https://github.com/bisdas/mdb-home/compare/v1.0.3...v1.0.4-dev-relative-styles.1) (2024-11-10)
+
+### :package: Maintenance
+
+* added content ([4296662](https://github.com/bisdas/mdb-home/commit/429666261fa2330b3b23e78683d1de944b0d2a66))
+
 ## [1.0.3](https://github.com/bisdas/mdb-home/compare/v1.0.2...v1.0.3) (2024-11-09)
 
 ### :bug: Bug Fixes
