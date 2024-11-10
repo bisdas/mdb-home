@@ -35,10 +35,10 @@ export const ProductImageBox = styled.div<{ theme: { theme: keyof typeof themeSe
     align-items: center;
     background-color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].productImageBackground} };
     border-radius: 0.4rem;
-    padding: 0.4rem;
     box-sizing: border-box;
     height: 20rem;
     width: 20rem;
+    overflow: hidden;
 `;
 
 export const ProductImageContent = styled.div<{ imageUrl: string }>`
