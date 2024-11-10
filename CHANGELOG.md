@@ -1,3 +1,13 @@
+## [1.0.7](https://github.com/bisdas/mdb-home/compare/v1.0.6...v1.0.7) (2024-11-10)
+
+### :repeat: CI
+
+* update workflow name ([665ce8d](https://github.com/bisdas/mdb-home/commit/665ce8d3619d549e41e3a66eb329b0759d3c24e6))
+
+### :package: Maintenance
+
+* **release:** [skip ci] v1.0.7-dev-relative-styles.1 update changelog ([e5daae1](https://github.com/bisdas/mdb-home/commit/e5daae11fa17b6f752ab2c52695759ff67c24d0c))
+
 ## [1.0.7-dev-relative-styles.1](https://github.com/bisdas/mdb-home/compare/v1.0.6...v1.0.7-dev-relative-styles.1) (2024-11-10)
 
 ### :repeat: CI
