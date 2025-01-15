@@ -23,9 +23,7 @@ export const ContentWrapper = styled.div`
     gap: 0.8rem;
 `;
 
-export const Anchor = styled.a<{ href: string }>`
-    text-decoration: none;
-`;
+
 
 export const DefaultIconBox = styled.div`
     display: flex;
@@ -65,8 +63,3 @@ export const Address = styled.div`
     }
 `;
 
-export const NavigateIconBox = styled(DefaultIconBox)`
-    background-color: transparent;
-    width: 2rem;
-    opacity: 40%;
-`;

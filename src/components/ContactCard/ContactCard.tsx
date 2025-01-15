@@ -4,16 +4,10 @@ import {
     MethodDetails,
     Method,
     Address,
-    NavigateIconBox,
-    Anchor,
     ContentWrapper,
 } from './ContactCard.styled';
 import { ContactMethod } from 'src/constants/commonConstants';
-import ArrowNextRightIcon from 'src/components/ArrowNextRightIcon';
-import { Theme } from 'src/constants/experienceConstants';
-import { useExperienceStore } from 'src/stores/experienceStore';
 import { ContactMethodIcon } from 'src/components/ContactMethodIcon/ContactMethodIcon';
-import { useMemo } from 'react';
 
 interface ContactCardProps {
     method: ContactMethod;
@@ -29,24 +23,23 @@ interface ContactCardProps {
  * @param props.addressText - The text to display for the address.
  * @returns The rendered component.
  */
-export const ContactCard = ({ method, address, addressText }: ContactCardProps) => {
-    const { experience } = useExperienceStore();
+export const ContactCard = ({ method, addressText }: ContactCardProps) => {
+    // const { experience } = useExperienceStore();
 
-    const anchorHref = useMemo(() => {
-        if (method === ContactMethod.Email) {
-            return `mailto:${address}`;
-        }
+    // const anchorHref = useMemo(() => {
+    //     if (method === ContactMethod.Email) {
+    //         return `mailto:${address}`;
+    //     }
 
-        if (method === ContactMethod.Phone) {
-            return `tel:${address}`;
-        }
+    //     if (method === ContactMethod.Phone) {
+    //         return `tel:${address}`;
+    //     }
 
-        return address;
-    }, [method, address]);
+    //     return address;
+    // }, [method, address]);
 
     return (
         <OuterWrapper>
-            <Anchor href={anchorHref} target="_blank">
                 <ContentWrapper>
                     <MethodIconBox>
                         <ContactMethodIcon method={method} />
@@ -55,7 +48,7 @@ export const ContactCard = ({ method, address, addressText }: ContactCardProps) 
                         <Method>{method}</Method>
                         <Address>{addressText}</Address>
                     </MethodDetails>
-                    <NavigateIconBox>
+                    {/* <NavigateIconBox>
                         <ArrowNextRightIcon
                             width="1em"
                             height="1em"
@@ -65,9 +58,8 @@ export const ContactCard = ({ method, address, addressText }: ContactCardProps) 
                                     : 'var(--default-dark-theme-icon-color)'
                             }
                         />
-                    </NavigateIconBox>
+                    </NavigateIconBox> */}
                 </ContentWrapper>
-            </Anchor>
         </OuterWrapper>
     );
 };

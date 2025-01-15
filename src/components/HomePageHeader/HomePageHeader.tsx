@@ -16,7 +16,7 @@ export const HomePageHeader = () => {
         <OuterWrapper>
             <Content>
                 <SiteLogo>
-                    <DelishBowlBranding height="6rem" width="16rem" theme={experience.theme} />
+                    <DelishBowlBranding height="5.8rem" width="15.2rem" theme={experience.theme} />
                 </SiteLogo>
                 <ThemeSwitcher>
                     <Label>Lights</Label>
