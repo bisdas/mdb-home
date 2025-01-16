@@ -1,6 +1,6 @@
 import { Theme } from 'src/constants/experienceConstants';
 import { DelishBowlBranding } from 'src/components/shared/DelishBowlBranding/DelishBowlBranding';
-import { OuterWrapper, Content, SiteLogo, ThemeSwitcher, Label } from './HomePageHeader.styled';
+import { OuterWrapper, Content, SiteBranding, ThemeSwitcher, Label } from './HomePageHeader.styled';
 import { ToggleSwitch } from 'src/components/shared/ToggleSwitch/ToggleSwitch';
 import { useExperienceStore } from 'src/stores/experienceStore';
 
@@ -15,19 +15,19 @@ export const HomePageHeader = () => {
     return (
         <OuterWrapper>
             <Content>
-                <SiteLogo>
-                    <DelishBowlBranding height="6rem" width="16rem" theme={experience.theme} />
-                </SiteLogo>
-                <ThemeSwitcher>
-                    <Label>Lights</Label>
-                    <ToggleSwitch
-                        isOn={isLightTheme}
-                        onChange={(isOn) => {
-                            setTheme(isOn ? Theme.LightTheme : Theme.DarkTheme);
-                        }}
-                    />
-                </ThemeSwitcher>
+                <SiteBranding>
+                    <DelishBowlBranding height="8rem" width="11rem" theme={experience.theme} />
+                </SiteBranding>
             </Content>
+            <ThemeSwitcher>
+                <Label>Lights</Label>
+                <ToggleSwitch
+                    isOn={isLightTheme}
+                    onChange={(isOn) => {
+                        setTheme(isOn ? Theme.LightTheme : Theme.DarkTheme);
+                    }}
+                />
+            </ThemeSwitcher>
         </OuterWrapper>
     );
 };

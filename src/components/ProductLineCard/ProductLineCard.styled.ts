@@ -32,16 +32,16 @@ export const DefaultIconBox = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].defaultIconBackground} };
-    height: 4.2rem;
-    width: 4.2rem;
+    height: 5.8rem;
+    width: 5.8rem;
     border-radius: 0.4rem;
 `;
 
 export const ProductImageBox = styled(DefaultIconBox)`
-    padding: 0.4rem;
+    padding: 0.1rem;
     box-sizing: border-box;
-    height: 4.2rem;
-    width: 4.2rem;
+    height: 5.8rem;
+    width: 5.8rem;
 `;
 
 export const ProductImageContent = styled.div<{ imageUrl: string }>`
