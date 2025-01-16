@@ -3,10 +3,10 @@ import styled from 'styled-components/macro';
 
 const themeSetting = {
     [Theme.LightTheme]: {
-        titleTextColor: 'var(--default-light-theme-font-color)',
+        titleTextColor: 'var(--theme-light-text-color-default)',
     },
     [Theme.DarkTheme]: {
-        titleTextColor: 'var(--default-dark-theme-font-color)',
+        titleTextColor: 'var(--theme-dark-text-color-default)',
     },
 };
 
@@ -17,7 +17,6 @@ export const OuterWrapper = styled.div<{ padding?: boolean }>`
 `;
 
 export const TitleText = styled.div`
-    font-family: var(--default-font-family);
     font-size: 2rem;
     font-weight: 800;
     color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].titleTextColor};
@@ -25,6 +24,5 @@ export const TitleText = styled.div`
 
 export const Content = styled.div`
     margin-top: 1.4rem;
-    font-family: var(--default-font-family);
     font-size: var(--default-font-size);
 `;

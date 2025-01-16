@@ -23,8 +23,6 @@ export const ContentWrapper = styled.div`
     gap: 0.8rem;
 `;
 
-
-
 export const DefaultIconBox = styled.div`
     display: flex;
     justify-content: center;
@@ -62,4 +60,3 @@ export const Address = styled.div`
         font-weight: 600;
     }
 `;
-

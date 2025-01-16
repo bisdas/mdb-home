@@ -14,20 +14,20 @@ export const useThemeRefresh = (isLoading: boolean, theme: Theme) => {
             // todo: find a better way to set the background color
             document.documentElement.style.backgroundColor =
                 theme === Theme.LightTheme
-                    ? 'var(--default-light-theme-background-color)'
-                    : 'var(--default-dark-theme-background-color)';
+                    ? 'var(--theme-light-background-color-default)'
+                    : 'var(--theme-dark-background-color-default)';
             document.body.style.backgroundColor =
                 theme === Theme.LightTheme
-                    ? 'var(--default-light-theme-background-color)'
-                    : 'var(--default-dark-theme-background-color)';
+                    ? 'var(--theme-light-background-color-default)'
+                    : 'var(--theme-dark-background-color-default)';
             document.documentElement.style.color =
                 theme === Theme.LightTheme
-                    ? 'var(--default-light-theme-font-color)'
-                    : 'var(--default-dark-theme-font-color)';
+                    ? 'var(--theme-light-text-color-default)'
+                    : 'var(--theme-dark-text-color-default)';
             document.body.style.color =
                 theme === Theme.LightTheme
-                    ? 'var(--default-light-theme-font-color)'
-                    : 'var(--default-dark-theme-font-color)';
+                    ? 'var(--theme-light-text-color-default)'
+                    : 'var(--theme-dark-text-color-default)';
         }
     }, [theme, isLoading]);
 };

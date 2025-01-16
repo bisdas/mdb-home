@@ -1,11 +1,4 @@
-import {
-    OuterWrapper,
-    MethodIconBox,
-    MethodDetails,
-    Method,
-    Address,
-    ContentWrapper,
-} from './ContactCard.styled';
+import { OuterWrapper, MethodIconBox, MethodDetails, Method, Address, ContentWrapper } from './ContactCard.styled';
 import { ContactMethod } from 'src/constants/commonConstants';
 import { ContactMethodIcon } from 'src/components/ContactMethodIcon/ContactMethodIcon';
 
@@ -40,15 +33,15 @@ export const ContactCard = ({ method, addressText }: ContactCardProps) => {
 
     return (
         <OuterWrapper>
-                <ContentWrapper>
-                    <MethodIconBox>
-                        <ContactMethodIcon method={method} />
-                    </MethodIconBox>
-                    <MethodDetails>
-                        <Method>{method}</Method>
-                        <Address>{addressText}</Address>
-                    </MethodDetails>
-                    {/* <NavigateIconBox>
+            <ContentWrapper>
+                <MethodIconBox>
+                    <ContactMethodIcon method={method} />
+                </MethodIconBox>
+                <MethodDetails>
+                    <Method>{method}</Method>
+                    <Address>{addressText}</Address>
+                </MethodDetails>
+                {/* <NavigateIconBox>
                         <ArrowNextRightIcon
                             width="1em"
                             height="1em"
@@ -59,7 +52,7 @@ export const ContactCard = ({ method, addressText }: ContactCardProps) => {
                             }
                         />
                     </NavigateIconBox> */}
-                </ContentWrapper>
+            </ContentWrapper>
         </OuterWrapper>
     );
 };
