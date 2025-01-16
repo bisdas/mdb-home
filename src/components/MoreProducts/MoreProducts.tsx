@@ -19,7 +19,10 @@ export const MoreProducts = () => {
                 const iconImage = product.images.find((image) => image.isIcon);
                 const iconImageUrl = `${getSiteHost()}/${ProductImagesDirectory}/${iconImage?.imageName}`;
                 const isLastItem = index === products.length - 1;
-                const borderColor = experience.theme === Theme.LightTheme ? 'var(--default-light-theme-border-color)' : 'var(--default-dark-theme-border-color)';
+                const borderColor =
+                    experience.theme === Theme.LightTheme
+                        ? 'var(--default-light-theme-border-color)'
+                        : 'var(--default-dark-theme-border-color)';
 
                 return (
                     <ProductLineCardWrapper key={product.id} border={!isLastItem} borderColor={borderColor}>
