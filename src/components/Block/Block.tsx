@@ -1,8 +1,8 @@
 import { OuterWrapper, ContentWrapper, TitleText, SubtitleText, Content } from './Block.styled';
 
 interface BlockProps {
-    title: string;
-    subtitle: string;
+    title?: string;
+    subtitle?: string;
     padding?: boolean;
     children: React.ReactNode;
 }
@@ -20,8 +20,8 @@ export const Block = ({ title, subtitle, padding = false, children }: BlockProps
     return (
         <OuterWrapper padding={padding}>
             <ContentWrapper>
-                <TitleText>{title}</TitleText>
-                <SubtitleText>{subtitle}</SubtitleText>
+                {title && <TitleText>{title}</TitleText>}
+                {subtitle && <SubtitleText>{subtitle}</SubtitleText>}
                 <Content>{children}</Content>
             </ContentWrapper>
         </OuterWrapper>

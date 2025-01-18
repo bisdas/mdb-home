@@ -28,8 +28,8 @@ export const SocialPlatformIcon = (props: SocialPlatformIconProps) => {
                     height="2.4em"
                     color={
                         experience.theme === Theme.LightTheme
-                            ? 'var(--light-theme-instagram-color)'
-                            : 'var(--dark-theme-instagram-color)'
+                            ? 'var(--theme-light-icon-color-default)'
+                            : 'var(--theme-dark-icon-color-default)'
                     }
                 />
             );
@@ -40,32 +40,32 @@ export const SocialPlatformIcon = (props: SocialPlatformIconProps) => {
                     height="2.4em"
                     color={
                         experience.theme === Theme.LightTheme
-                            ? 'var(--light-theme-youtube-color)'
-                            : 'var(--dark-theme-youtube-color)'
+                            ? 'var(--theme-light-icon-color-default)'
+                            : 'var(--theme-dark-icon-color-default)'
                     }
                 />
             );
         case SocialPlatform.Facebook:
             return (
                 <IconFacebook
-                    width="2.4em"
-                    height="2.4em"
+                    width="2.1em"
+                    height="2.1em"
                     color={
                         experience.theme === Theme.LightTheme
-                            ? 'var(--light-theme-facebook-color)'
-                            : 'var(--dark-theme-facebook-color)'
+                            ? 'var(--theme-light-icon-color-default)'
+                            : 'var(--theme-dark-icon-color-default)'
                     }
                 />
             );
         case SocialPlatform.Threads:
             return (
                 <IconThreads
-                    width="2.4em"
-                    height="2.4em"
+                    width="1.8em"
+                    height="1.8em"
                     color={
                         experience.theme === Theme.LightTheme
-                            ? 'var(--light-theme-threads-color)'
-                            : 'var(--dark-theme-threads-color)'
+                            ? 'var(--theme-light-icon-color-default)'
+                            : 'var(--theme-dark-icon-color-default)'
                     }
                 />
             );

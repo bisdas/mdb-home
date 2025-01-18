@@ -32,38 +32,9 @@ export const DefaultIconBox = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].defaultIconBackground} };
-    height: 4rem;
-    width: 4rem;
+    height: 2.2rem;
+    width: 2.2rem;
     border-radius: 0.4rem;
 `;
 
 export const PlatformIconBox = styled(DefaultIconBox)``;
-
-export const PlatformDetails = styled.div`
-    flex: 4;
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-`;
-
-export const Name = styled.div`
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].nameText};
-    flex: 1;
-    pointer-events: none;
-`;
-
-export const Followers = styled.div`
-    flex: 1;
-
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].followersText};
-`;
-
-export const NavigateIconBox = styled(DefaultIconBox)`
-    background-color: transparent;
-    width: 2rem;
-    opacity: 40%;
-`;

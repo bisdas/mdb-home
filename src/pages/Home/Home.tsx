@@ -1,10 +1,10 @@
-import { Block } from 'src/components/Block/Block';
+// import { Block } from 'src/components/Block/Block';
 import { OuterWrapper } from './Home.styled';
 // import { MoreProducts } from 'src/components/MoreProducts/MoreProducts';
 // import { ContactUs } from 'src/components/ContactUs/ContactUs';
 // import { OurPages } from 'src/components/OurPages/OurPages';
 // import { FeaturedItems } from 'src/components/FeaturedItems/FeaturedItems';
-// import { HomePageHeader } from 'src/components/HomePageHeader/HomePageHeader';
+import { HomePageHeader } from 'src/components/HomePageHeader/HomePageHeader';
 
 /**
  * Home component.
@@ -13,14 +13,12 @@ import { OuterWrapper } from './Home.styled';
 export const Home = () => {
     return (
         <OuterWrapper>
-            {/* <HomePageHeader /> */}
+            <HomePageHeader />
 
-            <Block title="Featured Items" subtitle="New arrivals & top products from our sponsors" padding>
+            {/* <Block title="Featured Items" subtitle="New arrivals & top products from our sponsors" padding>
                 block
             </Block>
-            {/* <Block title="Our pages" padding>
-                <OurPages />
-            </Block>
+            <
             <Block title="Featured products" padding>
                 <MoreProducts />
             </Block>

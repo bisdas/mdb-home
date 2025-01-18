@@ -2,7 +2,7 @@ import { AppSurface } from './App.styled';
 import { CommonUIComponents } from './components/shared/CommonUIComponents/CommonUIComponents';
 import { useInitialization } from './hooks/useInitialization';
 import './styles/globalStyles.scss';
-import { Home } from './components/Home/Home';
+import { Home } from './pages/Home/Home';
 import { themeSelector, useExperienceStore } from './stores/experienceStore';
 import { ThemeProvider } from 'styled-components/macro';
 import { useThemeRefresh } from './hooks/useThemeRefresh';
