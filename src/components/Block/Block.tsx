@@ -1,7 +1,8 @@
-import { OuterWrapper, TitleText, Content } from './Block.styled';
+import { OuterWrapper, ContentWrapper, TitleText, SubtitleText, Content } from './Block.styled';
 
 interface BlockProps {
     title: string;
+    subtitle: string;
     padding?: boolean;
     children: React.ReactNode;
 }
@@ -10,15 +11,19 @@ interface BlockProps {
  * Block component.
  * @param props props
  * @param props.title title of the block
+ * @param props.subtitle subtitle of the block
  * @param props.padding indicates if padding applied
  * @param props.children children node of the block
  * @returns component JSX.
  */
-export const Block = ({ title, padding = false, children }: BlockProps) => {
+export const Block = ({ title, subtitle, padding = false, children }: BlockProps) => {
     return (
         <OuterWrapper padding={padding}>
-            <TitleText>{title}</TitleText>
-            <Content>{children}</Content>
+            <ContentWrapper>
+                <TitleText>{title}</TitleText>
+                <SubtitleText>{subtitle}</SubtitleText>
+                <Content>{children}</Content>
+            </ContentWrapper>
         </OuterWrapper>
     );
 };
