@@ -1,3 +1,20 @@
+## [1.1.0](https://github.com/bisdas/mdb-home/compare/v1.0.7...v1.1.0) (2025-01-18)
+
+### :sparkles: New Features
+
+* social profiles bar ([7f73344](https://github.com/bisdas/mdb-home/commit/7f73344aa5a5e20d2699b8a89b74ba30b07b8fc8))
+
+### :bug: Bug Fixes
+
+* fix broken import ([e651cf8](https://github.com/bisdas/mdb-home/commit/e651cf85dcd131c50cc10e72601d65745c49fe60))
+
+### :package: Maintenance
+
+* block title subtitle and content adjustment ([bb32204](https://github.com/bisdas/mdb-home/commit/bb32204476d7d015b3d081a098fb821b65a81714))
+* **release:** [skip ci] v1.1.0-dev-social-links-block.1 update changelog ([374452f](https://github.com/bisdas/mdb-home/commit/374452faabb7e00f65dc1faf16be27db5cbfd0a9))
+* style adjustments ([9b371dc](https://github.com/bisdas/mdb-home/commit/9b371dcefe8a84db771f22f2e2ebae30f895dbfe))
+* updated logo ([22c79c6](https://github.com/bisdas/mdb-home/commit/22c79c6f89f9260e174e9f3bbc9b7c87c46b39e8))
+
 ## [1.1.0-dev-social-links-block.1](https://github.com/bisdas/mdb-home/compare/v1.0.7...v1.1.0-dev-social-links-block.1) (2025-01-18)
 
 ### :sparkles: New Features
