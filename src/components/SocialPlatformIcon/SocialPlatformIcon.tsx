@@ -60,8 +60,8 @@ export const SocialPlatformIcon = (props: SocialPlatformIconProps) => {
         case SocialPlatform.Threads:
             return (
                 <IconThreads
-                    width="1.8em"
-                    height="1.8em"
+                    width="1.75em"
+                    height="1.75em"
                     color={
                         experience.theme === Theme.LightTheme
                             ? 'var(--theme-light-icon-color-default)'
