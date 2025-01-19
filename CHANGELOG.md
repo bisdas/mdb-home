@@ -1,3 +1,5 @@
+## [1.1.1-dev-social-links-block.1](https://github.com/bisdas/mdb-home/compare/v1.1.0...v1.1.1-dev-social-links-block.1) (2025-01-19)
+
 ## [1.1.0](https://github.com/bisdas/mdb-home/compare/v1.0.7...v1.1.0) (2025-01-18)
 
 ### :sparkles: New Features
