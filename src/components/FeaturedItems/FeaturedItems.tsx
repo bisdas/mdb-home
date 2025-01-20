@@ -1,6 +1,6 @@
 import { Product } from 'src/constants/schema';
 import { products } from 'src/mocks/apiResponseMock';
-import { OuterWrapper, Content, Item } from './FeaturedItems.styled';
+import { OuterWrapper, Item, ContentStacked } from './FeaturedItems.styled';
 import { FeaturedItemCard } from 'src/components/FeaturedItemCard/FeaturedItemCard';
 
 /**
@@ -12,12 +12,13 @@ export const FeaturedItems = () => {
 
     return (
         <OuterWrapper>
-            <Content>
+            <ContentStacked>
                 {featuredProducts.map((product: Product, index: number) => {
                     const imageUrl = `productImages/${product.images[0].imageName}`;
+                    const isLastItem = index === featuredProducts.length - 1;
 
                     return (
-                        <Item key={product.id} isLastItem={index === featuredProducts.length - 1}>
+                        <Item key={product.id} isLastitem={isLastItem}>
                             <FeaturedItemCard
                                 imageUrl={imageUrl}
                                 brand={product.brand}
@@ -29,7 +30,7 @@ export const FeaturedItems = () => {
                         </Item>
                     );
                 })}
-            </Content>
+            </ContentStacked>
         </OuterWrapper>
     );
 };
