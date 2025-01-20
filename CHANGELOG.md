@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/bisdas/mdb-home/compare/v1.1.0...v1.1.1) (2025-01-19)
+
+### :package: Maintenance
+
+* **release:** [skip ci] v1.1.1-dev-social-links-block.1 update changelog ([2a199d6](https://github.com/bisdas/mdb-home/commit/2a199d6a40dee591b68108601c886f6d95e4c3ac))
+
+## [1.1.1-dev-social-links-block.1](https://github.com/bisdas/mdb-home/compare/v1.1.0...v1.1.1-dev-social-links-block.1) (2025-01-19)
+
 ## [1.1.0](https://github.com/bisdas/mdb-home/compare/v1.0.7...v1.1.0) (2025-01-18)
 
 ### :sparkles: New Features
