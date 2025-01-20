@@ -11,7 +11,7 @@ const themeSetting = {
 };
 export const OuterWrapper = styled.div`
     border-radius: 1.6rem;
-    height: 80px;
+    height: 92px;
     overflow: hidden;
 `;
 

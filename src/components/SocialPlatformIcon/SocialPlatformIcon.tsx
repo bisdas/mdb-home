@@ -24,8 +24,8 @@ export const SocialPlatformIcon = (props: SocialPlatformIconProps) => {
         case SocialPlatform.Instagram:
             return (
                 <IconInstagram
-                    width="2.4em"
-                    height="2.4em"
+                    width="2.6em"
+                    height="2.6em"
                     color={
                         experience.theme === Theme.LightTheme
                             ? 'var(--theme-light-icon-color-default)'
@@ -36,8 +36,8 @@ export const SocialPlatformIcon = (props: SocialPlatformIconProps) => {
         case SocialPlatform.YouTube:
             return (
                 <IconYouTube
-                    width="2.4em"
-                    height="2.4em"
+                    width="2.6em"
+                    height="2.6em"
                     color={
                         experience.theme === Theme.LightTheme
                             ? 'var(--theme-light-icon-color-default)'
@@ -48,8 +48,8 @@ export const SocialPlatformIcon = (props: SocialPlatformIconProps) => {
         case SocialPlatform.Facebook:
             return (
                 <IconFacebook
-                    width="2.1em"
-                    height="2.1em"
+                    width="2.3em"
+                    height="2.3em"
                     color={
                         experience.theme === Theme.LightTheme
                             ? 'var(--theme-light-icon-color-default)'
@@ -60,8 +60,8 @@ export const SocialPlatformIcon = (props: SocialPlatformIconProps) => {
         case SocialPlatform.Threads:
             return (
                 <IconThreads
-                    width="1.75em"
-                    height="1.75em"
+                    width="1.95em"
+                    height="1.95em"
                     color={
                         experience.theme === Theme.LightTheme
                             ? 'var(--theme-light-icon-color-default)'

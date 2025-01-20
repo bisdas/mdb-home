@@ -4,7 +4,6 @@ import styled from 'styled-components/macro';
 const themeSetting = {
     [Theme.LightTheme]: {
         backgroundColor: 'var(--theme-light-background-tint-color-default)',
-        // todo: use a standard color
     },
     [Theme.DarkTheme]: {
         backgroundColor: 'var(--theme-dark-background-tint-color-default)',
@@ -27,12 +26,12 @@ export const SiteBrandingWrapper = styled.div`
 export const SocialLinksBarWrapper = styled.div`
     display: flex;
     justify-content: center;
-    top: -40px;
+    top: -46px;
     position: relative;
 `;
 
 export const SocialLinksBarInnerWrapper = styled.div`
-    width: 16rem;
+    width: 18rem;
 `;
 
 export const ThemeSwitcher = styled.div`

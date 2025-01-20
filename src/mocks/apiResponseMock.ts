@@ -168,7 +168,7 @@ export const products: Product[] = [
         ],
         link: 'https://amzn.to/48HydfD',
         backgroundColor: '#ffffff',
-        categories: [DelishBowlCategory.Beauty, DelishBowlCategory.Lifestyle],
+        categories: [DelishBowlCategory.Beauty, DelishBowlCategory.Lifestyle, DelishBowlCategory.Food],
         isFeatured: true,
         available: true,
     },

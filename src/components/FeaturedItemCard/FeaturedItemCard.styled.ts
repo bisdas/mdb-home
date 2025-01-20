@@ -4,24 +4,28 @@ import styled from 'styled-components/macro';
 
 const themeSetting = {
     [Theme.LightTheme]: {
-        productImageBackground: 'var(--default-light-theme-image-background-color)',
-        brandText: 'var(--default-light-theme-heading-level-6-color)',
-        titleText: 'var(--default-light-theme-heading-level-6-color)',
-        foodChipBackground: 'var(--light-theme-product-category-food-chip-color)',
-        beautyChipBackground: 'var(--light-theme-product-category-beauty-chip-color)',
-        lifestyleChipBackground: 'var(--light-theme-product-category-lifestyle-chip-color)',
+        brandText: 'var(--theme-light-text-color-default)',
+        titleText: 'var(--theme-light-text-color-default)',
+        foodChipBackground: 'var(--theme-light-category-food-bg-color-default)',
+        beautyChipBackground: 'var(--theme-light-category-beauty-bg-color-default)',
+        lifestyleChipBackground: 'var(--theme-light-category-lifestyle-bg-color-default)',
+        borderColor: '#dadada',
     },
     [Theme.DarkTheme]: {
-        productImageBackground: 'var(--default-dark-theme-image-background-color)',
-        brandText: 'var(--default-dark-theme-heading-level-6-color)',
-        titleText: 'var(--default-dark-theme-heading-level-6-color)',
-        foodChipBackground: 'var(--dark-theme-product-category-food-chip-color)',
-        beautyChipBackground: 'var(--dark-theme-product-category-beauty-chip-color)',
-        lifestyleChipBackground: 'var(--dark-theme-product-category-lifestyle-chip-color)',
+        brandText: 'var(--theme-dark-text-color-default)',
+        titleText: 'var(--theme-dark-text-color-default)',
+        foodChipBackground: 'var(--theme-dark-category-food-bg-color-default)',
+        beautyChipBackground: 'var(--theme-dark-category-beauty-bg-color-default)',
+        lifestyleChipBackground: 'var(--theme-dark-category-lifestyle-bg-color-default)',
+        borderColor: '#282828',
     },
 };
 
-export const OuterWrapper = styled.div``;
+export const OuterWrapper = styled.div<{ theme: { theme: keyof typeof themeSetting } }>`
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+`;
 
 export const Anchor = styled.a<{ href: string }>`
     text-decoration: none;
@@ -29,15 +33,19 @@ export const Anchor = styled.a<{ href: string }>`
     width: 100%;
 `;
 
+export const ProductImageBoxOuter = styled.div`
+    flex: 1;
+`;
+
 export const ProductImageBox = styled.div<{ theme: { theme: keyof typeof themeSetting } }>`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].productImageBackground} };
+    // todo: dynamic background color
     border-radius: 0.4rem;
     box-sizing: border-box;
-    height: 20rem;
-    width: 20rem;
+    height: 9rem;
+    width: 9rem;
     overflow: hidden;
 `;
 
@@ -46,6 +54,22 @@ export const ProductImageContent = styled.div<{ imageUrl: string }>`
     background-size: cover;
     flex: 1;
     height: 100%;
+`;
+
+export const ProductDetailsOuter = styled.div`
+    position: relative;
+    top: -0.2rem;
+`;
+
+export const ProductDetails = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    height: 100%;
+`;
+
+export const CategoryChips = styled.div`
+    top: 0.2px;
 `;
 
 export const CategoryChip = styled.span<{ category: DelishBowlCategory }>`
@@ -71,28 +95,21 @@ export const CategoryChip = styled.span<{ category: DelishBowlCategory }>`
     color: white;
     padding: 0.1rem 1rem;
     border-radius: 0.7rem;
-    position: relative;
-    top: -2rem;
-    left: 0.8rem;
     margin-right: 0.6rem;
-`;
-
-export const ProductDetails = styled.div`
-    width: 100%;
-    margin-top: 1rem;
+    font-size: 0.9rem;
 `;
 
 export const Brand = styled.div`
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.14rem;
     color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].brandText};
     pointer-events: none;
 `;
 
 export const Title = styled.div`
+    flex: 1;
     color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].titleText};
-    font-size: 1.2rem;
+    font-size: 1.14rem;
     font-weight: normal;
     white-space: normal;
-    margin-top: 0.4rem;
 `;

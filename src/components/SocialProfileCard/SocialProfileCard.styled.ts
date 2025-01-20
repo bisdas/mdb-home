@@ -32,8 +32,8 @@ export const DefaultIconBox = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].defaultIconBackground} };
-    height: 2.2rem;
-    width: 2.2rem;
+    height: 2.6rem;
+    width: 2.6rem;
     border-radius: 0.4rem;
 `;
 
