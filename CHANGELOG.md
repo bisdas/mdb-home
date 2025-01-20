@@ -1,3 +1,13 @@
+## [1.2.0-dev-featured-products.1](https://github.com/bisdas/mdb-home/compare/v1.1.0...v1.2.0-dev-featured-products.1) (2025-01-20)
+
+### :zap: Refactor
+
+* fix lint issues ([5c07faa](https://github.com/bisdas/mdb-home/commit/5c07faa86e0e78ae725bd2d2f36aa3010f68ff77))
+
+### :sparkles: New Features
+
+* featured products ([589832b](https://github.com/bisdas/mdb-home/commit/589832bff29e3d0889b0f955cbc58ee38c4f584a))
+
 ## [1.1.0](https://github.com/bisdas/mdb-home/compare/v1.0.7...v1.1.0) (2025-01-18)
 
 ### :sparkles: New Features
