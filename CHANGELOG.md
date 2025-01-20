@@ -1,3 +1,11 @@
+## [1.2.0-dev-featured-products.2](https://github.com/bisdas/mdb-home/compare/v1.2.0-dev-featured-products.1...v1.2.0-dev-featured-products.2) (2025-01-20)
+
+### :package: Maintenance
+
+* **release:** [skip ci] v1.1.1 update changelog ([8f9c699](https://github.com/bisdas/mdb-home/commit/8f9c699abebc5050628b01060db9984d9a79f80a))
+* **release:** [skip ci] v1.1.1-dev-social-links-block.1 update changelog ([2a199d6](https://github.com/bisdas/mdb-home/commit/2a199d6a40dee591b68108601c886f6d95e4c3ac))
+* update changelog ([7dd6dd4](https://github.com/bisdas/mdb-home/commit/7dd6dd4dc884381a521bbeb8173e15411973f5b0))
+
 ## [1.2.0-dev-featured-products.1](https://github.com/bisdas/mdb-home/compare/v1.1.0...v1.2.0-dev-featured-products.1) (2025-01-20)
 
 ### :zap: Refactor
