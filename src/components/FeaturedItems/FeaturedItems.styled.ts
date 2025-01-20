@@ -1,3 +1,4 @@
+/* eslint-disable no-negated-condition */
 import { Theme } from 'src/constants/experienceConstants';
 import styled from 'styled-components/macro';
 
@@ -20,5 +21,5 @@ export const Item = styled.div<{ isLastitem: boolean; theme: { theme: keyof type
     padding-bottom: 1.2rem;
     margin-bottom: 1.2rem;
     border-bottom: ${({ isLastitem, theme }: { isLastitem: boolean; theme: { theme: keyof typeof themeSetting } }) =>
-        !isLastitem ? `1px solid ${(themeSetting as any)[theme.theme].borderColor}` : 'none'};
+        !isLastitem ? `1px solid ${themeSetting[theme.theme].borderColor}` : 'none'};
 `;
