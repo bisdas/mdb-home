@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/bisdas/mdb-home/compare/v1.2.0...v1.2.1) (2025-01-21)
+
+### :package: Maintenance
+
+* block separator ([4c63a4f](https://github.com/bisdas/mdb-home/commit/4c63a4f48cac42bf9d3c5fa65e47f29f4ed28e1c))
+* **release:** [skip ci] v1.2.1-dev-block-separator.1 update changelog ([27e5764](https://github.com/bisdas/mdb-home/commit/27e5764d92b56c3a88cff4669c645c561801bd45))
+
 ## [1.2.1-dev-block-separator.1](https://github.com/bisdas/mdb-home/compare/v1.2.0...v1.2.1-dev-block-separator.1) (2025-01-21)
 
 ### :package: Maintenance
