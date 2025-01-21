@@ -5,6 +5,7 @@ import { OuterWrapper } from './Home.styled';
 // import { OurPages } from 'src/components/OurPages/OurPages';
 import { FeaturedItems } from 'src/components/FeaturedItems/FeaturedItems';
 import { HomePageHeader } from 'src/components/HomePageHeader/HomePageHeader';
+import { BlockSeparator } from 'src/components/BlockSeparator/BlockSeparator';
 
 /**
  * Home component.
@@ -14,9 +15,11 @@ export const Home = () => {
     return (
         <OuterWrapper>
             <HomePageHeader />
+            <BlockSeparator />
             <Block title="Featured Items" subtitle="New arrivals & top products from our sponsors" padding>
                 <FeaturedItems />
             </Block>
+            <BlockSeparator />
             {/*<Block title="Featured products" padding>
                 <MoreProducts />
             </Block>
