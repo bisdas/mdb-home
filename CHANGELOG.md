@@ -1,3 +1,9 @@
+## [1.3.0-dev-collaborate.1](https://github.com/bisdas/mdb-home/compare/v1.2.1...v1.3.0-dev-collaborate.1) (2025-01-22)
+
+### :sparkles: New Features
+
+* collaborate with us ([3b4cc0f](https://github.com/bisdas/mdb-home/commit/3b4cc0f843a4579cc1b856f682beab4c6f5c2dc0))
+
 ## [1.2.1](https://github.com/bisdas/mdb-home/compare/v1.2.0...v1.2.1) (2025-01-21)
 
 ### :package: Maintenance
