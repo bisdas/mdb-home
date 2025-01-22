@@ -29,6 +29,7 @@ export const TitleText = styled.div`
     text-align: center;
     font-weight: 640;
     color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].titleTextColor};
+    user-select: none;
 `;
 
 export const SubtitleText = styled.div`
@@ -42,6 +43,6 @@ export const SubtitleText = styled.div`
 `;
 
 export const Content = styled.div`
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: var(--default-font-size);
 `;

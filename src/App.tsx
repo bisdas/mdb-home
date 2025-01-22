@@ -19,7 +19,7 @@ export const App = () => {
     if (isLoading) {
         return (
             <ThemeProvider theme={{ theme }}>
-                <AppSurface>Loading...</AppSurface>
+                <AppSurface></AppSurface>
             </ThemeProvider>
         );
     }

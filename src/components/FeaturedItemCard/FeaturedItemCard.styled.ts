@@ -21,7 +21,7 @@ const themeSetting = {
     },
 };
 
-export const OuterWrapper = styled.div<{ theme: { theme: keyof typeof themeSetting } }>`
+export const OuterWrapper = styled.div`
     display: flex;
     flex-direction: row;
     gap: 1.2rem;

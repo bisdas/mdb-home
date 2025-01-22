@@ -15,6 +15,7 @@ export const OuterWrapper = styled.div``;
 
 export const ContentStacked = styled.div`
     width: 100%;
+    padding-top: 1rem;
 `;
 
 export const Item = styled.div<{ isLastitem: boolean; theme: { theme: keyof typeof themeSetting } }>`
