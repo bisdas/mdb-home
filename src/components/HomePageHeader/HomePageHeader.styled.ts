@@ -22,6 +22,7 @@ export const SiteBrandingWrapper = styled.div`
     background-color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].backgroundColor} };
     padding-top: 60px;
     padding-bottom: 80px;
+    user-select: none;
 `;
 export const SocialLinksBarWrapper = styled.div`
     display: flex;
@@ -32,17 +33,4 @@ export const SocialLinksBarWrapper = styled.div`
 
 export const SocialLinksBarInnerWrapper = styled.div`
     width: 18rem;
-`;
-
-export const ThemeSwitcher = styled.div`
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-`;
-
-export const Label = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 20px;
 `;
