@@ -1,3 +1,9 @@
+## [1.4.0-dev-write-to-us.1](https://github.com/bisdas/mdb-home/compare/v1.3.0...v1.4.0-dev-write-to-us.1) (2025-01-23)
+
+### :sparkles: New Features
+
+* write to us ([9c5ec71](https://github.com/bisdas/mdb-home/commit/9c5ec711ab0a45eed0f583d6fcea42b20dd56826))
+
 ## [1.3.0](https://github.com/bisdas/mdb-home/compare/v1.2.1...v1.3.0) (2025-01-22)
 
 ### :sparkles: New Features

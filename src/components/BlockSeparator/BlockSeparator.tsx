@@ -1,5 +1,5 @@
 import { useExperienceStore } from 'src/stores/experienceStore';
-import { IconChevronDown } from 'src/components/shared/IconChevronDown/IconChevronDown';
+import { IconChevronDown } from 'src/components/shared/iconComponents/IconChevronDown/IconChevronDown';
 import { OuterWrapper, ContentWrapper } from './BlockSeparator.styled';
 import { Theme } from 'src/constants/experienceConstants';
 

@@ -1,6 +1,6 @@
 import { useExperienceStore } from 'src/stores/experienceStore';
-import { IconEmail } from 'src/components/shared/IconEmail/IconEmail';
-import { IconPhone } from 'src/components/shared/IconPhone/IconPhone';
+import { IconEmail } from 'src/components/shared/iconComponents/IconEmail/IconEmail';
+import { IconPhone } from 'src/components/shared/iconComponents/IconPhone/IconPhone';
 import { ContactMethod } from 'src/constants/commonConstants';
 import { Theme } from 'src/constants/experienceConstants';
 

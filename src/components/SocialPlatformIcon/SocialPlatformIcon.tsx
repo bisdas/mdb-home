@@ -2,10 +2,10 @@
 import { useExperienceStore } from 'src/stores/experienceStore';
 import { SocialPlatform } from 'src/constants/commonConstants';
 import { Theme } from 'src/constants/experienceConstants';
-import { IconInstagram } from 'src/components/shared/IconInstagram/IconInstagram';
-import { IconYouTube } from 'src/components/shared/IconYouTube/IconYouTube';
-import { IconFacebook } from 'src/components/shared/IconFacebook/IconFacebook';
-import { IconThreads } from 'src/components/shared/IconThreads/IconThreads';
+import { IconInstagram } from 'src/components/shared/iconComponents/IconInstagram/IconInstagram';
+import { IconYouTube } from 'src/components/shared/iconComponents/IconYouTube/IconYouTube';
+import { IconFacebook } from 'src/components/shared/iconComponents/IconFacebook/IconFacebook';
+import { IconThreads } from 'src/components/shared/iconComponents/IconThreads/IconThreads';
 
 interface SocialPlatformIconProps {
     platform: SocialPlatform;
