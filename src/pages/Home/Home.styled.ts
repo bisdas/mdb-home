@@ -2,6 +2,10 @@ import styled from 'styled-components/macro';
 
 export const OuterWrapper = styled.div``;
 
+export const GoToTopWrapper = styled.div`
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+`;
 export const ThemeSwitcher = styled.div`
     flex: 1;
     display: flex;
