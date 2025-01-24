@@ -18,7 +18,7 @@ interface ProductLineCardProps {
     title: string;
     imageUrl: string;
     link: string;
-    backgroundColor: string;
+    // backgroundColor: string;
 }
 
 /**

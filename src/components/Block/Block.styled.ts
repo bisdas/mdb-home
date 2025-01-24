@@ -25,9 +25,9 @@ export const ContentWrapper = styled.div`
 `;
 
 export const TitleText = styled.div`
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
-    font-weight: 640;
+    font-weight: 700;
     color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].titleTextColor};
     user-select: none;
 `;
@@ -36,8 +36,8 @@ export const SubtitleText = styled.div`
     width: 70%;
     text-align: center;
     margin-top: 0.2rem;
-    font-size: 1.4rem;
-    font-weight: 360;
+    font-size: 1.5rem;
+    font-weight: 300;
     color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) =>
         themeSetting[theme.theme].subtitleTextColor};
 `;
@@ -45,4 +45,6 @@ export const SubtitleText = styled.div`
 export const Content = styled.div`
     margin-top: 2rem;
     font-size: var(--default-font-size);
+    display: flex;
+    justify-content: center;
 `;

@@ -1,6 +1,10 @@
 import { IconArrowUp } from 'src/components/shared/iconComponents/IconArrowUp/IconArrowUp';
 import { OuterWrapper, Content, IconWrapper } from './GoToTop.styled';
 
+/**
+ * Go to top component.
+ * @returns component JSX.
+ */
 export const GoToTop = () => {
     return (
         <OuterWrapper>
