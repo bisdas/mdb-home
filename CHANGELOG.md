@@ -1,3 +1,13 @@
+## [1.5.0](https://github.com/bisdas/mdb-home/compare/v1.4.0...v1.5.0) (2025-01-24)
+
+### :sparkles: New Features
+
+* amazon influencer shop ([1ac779b](https://github.com/bisdas/mdb-home/commit/1ac779bac98ceca191aeafd580e0592ad5c3ef32))
+
+### :package: Maintenance
+
+* **release:** [skip ci] v1.5.0-dev-cucumber.1 update changelog ([fdd91b0](https://github.com/bisdas/mdb-home/commit/fdd91b0aedfee1d8faf7fa879b1b76ad6c5a9c30))
+
 ## [1.5.0-dev-cucumber.1](https://github.com/bisdas/mdb-home/compare/v1.4.0...v1.5.0-dev-cucumber.1) (2025-01-24)
 
 ### :sparkles: New Features
