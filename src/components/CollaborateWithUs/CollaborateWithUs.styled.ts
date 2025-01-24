@@ -32,7 +32,7 @@ export const Content = styled.div`
 export const Paragraph = styled.div`
     color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].defaultText};
     font-size: 1.3rem;
-    font-weight: 300;
+    font-weight: 400;
     white-space: normal;
     text-align: center;
 `;

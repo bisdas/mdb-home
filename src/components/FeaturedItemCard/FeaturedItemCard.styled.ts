@@ -67,7 +67,7 @@ export const ProductDetailsOuter = styled.div`
 export const ProductDetails = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.2rem;
     height: 100%;
 `;
 
