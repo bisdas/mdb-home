@@ -12,7 +12,6 @@ export type Product = {
     title: string;
     images: ProductImage[];
     link: string;
-    backgroundColor: string;
     categories: DelishBowlCategory[];
     isFeatured?: boolean;
     available: boolean;

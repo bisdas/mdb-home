@@ -15,6 +15,7 @@ export const FeaturedItems = () => {
             <ContentStacked>
                 {featuredProducts.map((product: Product, index: number) => {
                     const imageUrl = `productImages/${product.images[0].imageName}`;
+                    const imageBackgroundColor = product.images[0].backgroundColor;
                     const isLastItem = index === featuredProducts.length - 1;
 
                     return (
@@ -24,8 +25,8 @@ export const FeaturedItems = () => {
                                 brand={product.brand}
                                 title={product.title}
                                 link={product.link}
-                                backgroundColor={product.backgroundColor}
                                 categories={product.categories}
+                                backgroundColor={imageBackgroundColor}
                             />
                         </Item>
                     );

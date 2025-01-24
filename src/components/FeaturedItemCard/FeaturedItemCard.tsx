@@ -29,16 +29,18 @@ interface FeaturedItemCardProps {
  * @param props.brand - The brand of the product.
  * @param props.title - The title of the product.
  * @param props.link - The link to the product.
+ * @param props.categories - The categories of the product.
+ * @param props.backgroundColor - The background color of the product image.
  * @returns The rendered component.
  */
 export const FeaturedItemCard = (props: FeaturedItemCardProps) => {
-    const { imageUrl, brand, title, link, categories } = props;
-    const clippedTitle = title.length > 120 ? `${title.substring(0, 100)}...` : title;
+    const { imageUrl, brand, title, link, categories, backgroundColor } = props;
+    const clippedTitle = title.length > 130 ? `${title.substring(0, 130)}...` : title;
 
     return (
         <OuterWrapper>
             <ProductImageBoxOuter>
-                <ProductImageBox>
+                <ProductImageBox backgroundColor={backgroundColor}>
                     <Anchor href={link} target="_blank">
                         <ProductImageContent imageUrl={imageUrl} />
                     </Anchor>

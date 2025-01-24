@@ -34,18 +34,20 @@ export const Anchor = styled.a<{ href: string }>`
 `;
 
 export const ProductImageBoxOuter = styled.div`
-    flex: 1;
+    height: 9rem;
+    width: 9rem;
+    overflow: hidden;
 `;
 
-export const ProductImageBox = styled.div<{ theme: { theme: keyof typeof themeSetting } }>`
+export const ProductImageBox = styled.div<{ backgroundColor: string }>`
     display: flex;
     justify-content: center;
     align-items: center;
-    // todo: dynamic background color
+    background-color: ${(props) => props.backgroundColor};
     border-radius: 0.4rem;
     box-sizing: border-box;
-    height: 9rem;
-    width: 9rem;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
 `;
 
@@ -59,6 +61,7 @@ export const ProductImageContent = styled.div<{ imageUrl: string }>`
 export const ProductDetailsOuter = styled.div`
     position: relative;
     top: -0.2rem;
+    flex: 1;
 `;
 
 export const ProductDetails = styled.div`

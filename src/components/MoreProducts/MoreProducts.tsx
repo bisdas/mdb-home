@@ -31,7 +31,7 @@ export const MoreProducts = () => {
                             brand={product.brand}
                             title={product.title}
                             link={product.link}
-                            backgroundColor={product.backgroundColor}
+                            // backgroundColor={product.backgroundColor}
                         />
                     </ProductLineCardWrapper>
                 );
