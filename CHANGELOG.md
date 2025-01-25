@@ -1,3 +1,9 @@
+## [1.5.2-dev-site-title.4](https://github.com/bisdas/mdb-home/compare/v1.5.2-dev-site-title.3...v1.5.2-dev-site-title.4) (2025-01-25)
+
+### :package: Maintenance
+
+* update cucumber subtitle ([72a5406](https://github.com/bisdas/mdb-home/commit/72a540603bb91d0a1dfc9e173e7b66f74b241c0f))
+
 ## [1.5.2-dev-site-title.3](https://github.com/bisdas/mdb-home/compare/v1.5.2-dev-site-title.2...v1.5.2-dev-site-title.3) (2025-01-25)
 
 ### :package: Maintenance
