@@ -1,3 +1,12 @@
+## [1.5.1](https://github.com/bisdas/mdb-home/compare/v1.5.0...v1.5.1) (2025-01-24)
+
+### :package: Maintenance
+
+* **release:** [skip ci] v1.5.1-dev-cucumber.1 update changelog ([c96dc19](https://github.com/bisdas/mdb-home/commit/c96dc193c6183123e245024cab976d1ef9f23eb6))
+* **release:** [skip ci] v1.5.1-dev-cucumber.2 update changelog ([b161dad](https://github.com/bisdas/mdb-home/commit/b161dadeea85a469f0f19afe20a24a1197598655))
+
+## [1.5.1-dev-cucumber.2](https://github.com/bisdas/mdb-home/compare/v1.5.1-dev-cucumber.1...v1.5.1-dev-cucumber.2) (2025-01-24)
+
 ## [1.5.1-dev-cucumber.1](https://github.com/bisdas/mdb-home/compare/v1.5.0...v1.5.1-dev-cucumber.1) (2025-01-24)
 
 ## [1.5.0](https://github.com/bisdas/mdb-home/compare/v1.4.0...v1.5.0) (2025-01-24)
