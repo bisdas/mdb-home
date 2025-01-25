@@ -1,3 +1,9 @@
+## [1.5.2-dev-site-title.1](https://github.com/bisdas/mdb-home/compare/v1.5.1...v1.5.2-dev-site-title.1) (2025-01-25)
+
+### :package: Maintenance
+
+* add site icon and title ([55f55dc](https://github.com/bisdas/mdb-home/commit/55f55dcdcfc89d94e269061183bc0d8971e7ae85))
+
 ## [1.5.1](https://github.com/bisdas/mdb-home/compare/v1.5.0...v1.5.1) (2025-01-24)
 
 ### :package: Maintenance
