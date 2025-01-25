@@ -1,3 +1,9 @@
+## [1.5.2-dev-site-title.2](https://github.com/bisdas/mdb-home/compare/v1.5.2-dev-site-title.1...v1.5.2-dev-site-title.2) (2025-01-25)
+
+### :bug: Bug Fixes
+
+* fix site zoom ([e537e91](https://github.com/bisdas/mdb-home/commit/e537e91ee4fc922840957943d3b8dcf0c4507a07))
+
 ## [1.5.2-dev-site-title.1](https://github.com/bisdas/mdb-home/compare/v1.5.1...v1.5.2-dev-site-title.1) (2025-01-25)
 
 ### :package: Maintenance
