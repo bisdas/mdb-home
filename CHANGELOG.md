@@ -1,3 +1,9 @@
+## [1.5.2-dev-site-title.3](https://github.com/bisdas/mdb-home/compare/v1.5.2-dev-site-title.2...v1.5.2-dev-site-title.3) (2025-01-25)
+
+### :package: Maintenance
+
+* update cucumber address ([ffd4e7e](https://github.com/bisdas/mdb-home/commit/ffd4e7eadc03d981e950a20b71df6b14c61a4f17))
+
 ## [1.5.2-dev-site-title.2](https://github.com/bisdas/mdb-home/compare/v1.5.2-dev-site-title.1...v1.5.2-dev-site-title.2) (2025-01-25)
 
 ### :bug: Bug Fixes
