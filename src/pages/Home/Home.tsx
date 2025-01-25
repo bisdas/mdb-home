@@ -21,7 +21,7 @@ import { WriteToUs } from 'src/components/WriteToUs/WriteToUs';
 import { GoToTop } from 'src/components/shared/GoToTop/GoToTop';
 import ShopCarousal from 'src/components/ShopCarousal/ShopCarousal';
 import { amazonInfluencerShopCarousalmages } from 'src/mocks/apiResponseMock';
-import { DelishBowlAmazonInfluencerShop } from 'src/constants/dataConstants';
+import { CucumberWebsiteAddress } from 'src/constants/dataConstants';
 
 /**
  * Home component.
@@ -53,14 +53,10 @@ export const Home = () => {
                 <ShopWrapper>
                     <ShopCarousal images={shopCarousalImages} />
                     <ShopIntro>
-                        Transform your space with our top picks! Visit our Amazon shop for the best in home, kitchen,
-                        and personal care essentials.
+                        Shop our top recommendations for beauty, personal care, home & kitchen essentials — at Cucumber!
                     </ShopIntro>
-                    {/* <ShopLink href={CucumberWebsiteAddress} target="_blank">
-                        Cucumber by Delish Bowl
-                    </ShopLink> */}
-                    <ShopLink href={DelishBowlAmazonInfluencerShop} target="_blank">
-                        Visit Shop
+                    <ShopLink href={CucumberWebsiteAddress} target="_blank">
+                        Visit Site
                     </ShopLink>
                 </ShopWrapper>
             </Block>
