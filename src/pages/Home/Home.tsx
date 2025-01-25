@@ -49,7 +49,7 @@ export const Home = () => {
                 </CollaborateWithUsWrapper>
             </Block>
             <BlockSeparator />
-            <Block title="Shop" padding>
+            <Block title="Shop" subtitle="Cucumber by Delish Bowl" padding>
                 <ShopWrapper>
                     <ShopCarousal images={shopCarousalImages} />
                     <ShopIntro>
