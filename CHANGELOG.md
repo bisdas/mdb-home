@@ -1,3 +1,19 @@
+## [1.5.2](https://github.com/bisdas/mdb-home/compare/v1.5.1...v1.5.2) (2025-01-25)
+
+### :bug: Bug Fixes
+
+* fix site zoom ([e537e91](https://github.com/bisdas/mdb-home/commit/e537e91ee4fc922840957943d3b8dcf0c4507a07))
+
+### :package: Maintenance
+
+* add site icon and title ([55f55dc](https://github.com/bisdas/mdb-home/commit/55f55dcdcfc89d94e269061183bc0d8971e7ae85))
+* **release:** [skip ci] v1.5.2-dev-site-title.1 update changelog ([919c54b](https://github.com/bisdas/mdb-home/commit/919c54b420eabe789d6b558a1541c261304273c5))
+* **release:** [skip ci] v1.5.2-dev-site-title.2 update changelog ([64be71c](https://github.com/bisdas/mdb-home/commit/64be71cfe180a8c16a0e8e663adada97d9dcc107))
+* **release:** [skip ci] v1.5.2-dev-site-title.3 update changelog ([6b7c9e3](https://github.com/bisdas/mdb-home/commit/6b7c9e33b13b9d9a43bc9df471461fc4dbf5a296))
+* **release:** [skip ci] v1.5.2-dev-site-title.4 update changelog ([cf8a8c3](https://github.com/bisdas/mdb-home/commit/cf8a8c3b15eaee457c32c6b54cbe67e386ddf44c))
+* update cucumber address ([ffd4e7e](https://github.com/bisdas/mdb-home/commit/ffd4e7eadc03d981e950a20b71df6b14c61a4f17))
+* update cucumber subtitle ([72a5406](https://github.com/bisdas/mdb-home/commit/72a540603bb91d0a1dfc9e173e7b66f74b241c0f))
+
 ## [1.5.2-dev-site-title.4](https://github.com/bisdas/mdb-home/compare/v1.5.2-dev-site-title.3...v1.5.2-dev-site-title.4) (2025-01-25)
 
 ### :package: Maintenance
