@@ -13,7 +13,24 @@ export const products: Product[] = [
                 backgroundColor: '#f4f4f4',
             },
         ],
-        link: 'https://bit.ly/40kXVmn',
+        links: [
+            {
+                title: 'Website',
+                link: 'https://bit.ly/4gTKO2G',
+            },
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/3C4Qjwu',
+            },
+            {
+                title: 'Flipkart',
+                link: 'https://bit.ly/40kXVmn',
+            },
+            {
+                title: 'Meesho',
+                link: 'https://bit.ly/4g63ElQ',
+            },
+        ],
         categories: [DelishBowlCategory.Beauty, DelishBowlCategory.Lifestyle],
         isFeatured: true,
         available: true,
@@ -29,7 +46,12 @@ export const products: Product[] = [
                 backgroundColor: '#f4f4f4',
             },
         ],
-        link: 'https://dl.flipkart.com/s/JytQ8GuuuN',
+        links: [
+            {
+                title: 'Flipkart',
+                link: 'https://dl.flipkart.com/s/JytQ8GuuuN',
+            },
+        ],
         categories: [DelishBowlCategory.Beauty],
         isFeatured: true,
         available: true,
@@ -45,7 +67,12 @@ export const products: Product[] = [
                 backgroundColor: '#f4f4f4',
             },
         ],
-        link: 'https://mlpl.link/dgyuHINF',
+        links: [
+            {
+                title: 'Website',
+                link: 'https://mlpl.link/dgyuHINF',
+            },
+        ],
         categories: [DelishBowlCategory.Beauty],
         isFeatured: true,
         available: true,
@@ -61,7 +88,12 @@ export const products: Product[] = [
                 backgroundColor: '#f4f4f4',
             },
         ],
-        link: 'https://amzn.to/47st5Lr',
+        links: [
+            {
+                title: 'View on Amazon',
+                link: 'https://amzn.to/47st5Lr',
+            },
+        ],
         categories: [DelishBowlCategory.Beauty, DelishBowlCategory.Lifestyle],
         isFeatured: true,
         available: true,

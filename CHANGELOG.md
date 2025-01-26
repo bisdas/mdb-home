@@ -1,3 +1,9 @@
+## [1.6.0-dev-product-multi-link.1](https://github.com/bisdas/mdb-home/compare/v1.5.2...v1.6.0-dev-product-multi-link.1) (2025-01-26)
+
+### :sparkles: New Features
+
+* multiple buying links for products ([37b2c0e](https://github.com/bisdas/mdb-home/commit/37b2c0ee2b9bb31667dd8aede9373f1719330072))
+
 ## [1.5.2](https://github.com/bisdas/mdb-home/compare/v1.5.1...v1.5.2) (2025-01-25)
 
 ### :bug: Bug Fixes

@@ -24,7 +24,7 @@ export const FeaturedItems = () => {
                                 imageUrl={imageUrl}
                                 brand={product.brand}
                                 title={product.title}
-                                link={product.link}
+                                links={product.links}
                                 categories={product.categories}
                                 backgroundColor={imageBackgroundColor}
                             />

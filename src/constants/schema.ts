@@ -6,12 +6,17 @@ export type ProductImage = {
     backgroundColor: string;
 };
 
+export type ProductLink = {
+    title: string;
+    link: string;
+};
+
 export type Product = {
     id: string;
     brand: string;
     title: string;
     images: ProductImage[];
-    link: string;
+    links: ProductLink[];
     categories: DelishBowlCategory[];
     isFeatured?: boolean;
     available: boolean;
