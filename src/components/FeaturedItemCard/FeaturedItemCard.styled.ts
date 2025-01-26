@@ -6,25 +6,38 @@ const themeSetting = {
     [Theme.LightTheme]: {
         brandText: 'var(--theme-light-text-color-default)',
         titleText: 'var(--theme-light-text-color-default)',
+        buttonText: 'var(--theme-light-text-color-default)',
         foodChipBackground: 'var(--theme-light-category-food-bg-color-default)',
         beautyChipBackground: 'var(--theme-light-category-beauty-bg-color-default)',
         lifestyleChipBackground: 'var(--theme-light-category-lifestyle-bg-color-default)',
         borderColor: '#dadada',
+        linkHighlightColor: 'var(--theme-light-background-highlight-color-default)',
     },
     [Theme.DarkTheme]: {
         brandText: 'var(--theme-dark-text-color-default)',
         titleText: 'var(--theme-dark-text-color-default)',
+        buttonText: 'var(--theme-dark-text-color-default)',
         foodChipBackground: 'var(--theme-dark-category-food-bg-color-default)',
         beautyChipBackground: 'var(--theme-dark-category-beauty-bg-color-default)',
         lifestyleChipBackground: 'var(--theme-dark-category-lifestyle-bg-color-default)',
         borderColor: '#282828',
+        linkHighlightColor: 'var(--theme-dark-background-highlight-color-default)',
     },
 };
 
-export const OuterWrapper = styled.div`
+export const OuterWrapper = styled.div``;
+export const ProductWrapperOuter = styled.div``;
+export const ProductWrapper = styled.div`
     display: flex;
     flex-direction: row;
     gap: 1.2rem;
+`;
+
+export const BuyingLinksWrapper = styled.div`
+    padding: 1.4rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 `;
 
 export const Anchor = styled.a<{ href: string }>`
@@ -32,6 +45,20 @@ export const Anchor = styled.a<{ href: string }>`
     height: 100%;
     width: 100%;
 `;
+
+export const BuyingLink = styled.a`
+    display: block;
+    font-size: 1.1rem;
+    text-decoration: none;
+    background-color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].linkHighlightColor} };
+    text-align: center;
+    padding: 0.3rem 0;
+    border-radius: 40px;
+    color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].buttonText} };
+    font-weight: 500;
+`;
+
+// todo: move buying link as a link button
 
 export const ProductImageBoxOuter = styled.div`
     height: 9rem;
