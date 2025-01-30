@@ -3,9 +3,42 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100006',
+        brand: 'Nature Sure',
+        title: 'Nature Sure Moringa Leaf Atta Mix | Drumstick Powder Superfood for Iron, Calcium and Vitamins | Sourced directly from farms',
+        images: [
+            {
+                imageName: '100006-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Website',
+                link: 'https://bit.ly/3CvFSSK',
+            },
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/49JMk4J',
+            },
+            {
+                title: 'Flipkart',
+                link: 'https://bit.ly/43cqT8d',
+            },
+            {
+                title: 'Meesho',
+                link: 'https://bit.ly/3qm2COq',
+            },
+        ],
+        categories: [DelishBowlCategory.Beauty, DelishBowlCategory.Lifestyle],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100002',
         brand: 'Nature Sure',
-        title: 'Nature Sure Tulsi Leaf Powder 200g. Pure and natural tulsi leaf powder (holy basil) sourced directly from farms.',
+        title: 'Nature Sure Tulsi Leaf Powder 200g. Pure and natural tulsi leaf powder (holy basil) sourced directly from farms',
         images: [
             {
                 imageName: '100002-001.png',
