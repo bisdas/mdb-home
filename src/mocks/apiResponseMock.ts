@@ -26,6 +26,10 @@ export const products: Product[] = [
                 title: 'Flipkart',
                 link: 'https://bit.ly/43cqT8d',
             },
+            {
+                title: 'Meesho',
+                link: 'https://bit.ly/3qm2COq',
+            },
         ],
         categories: [DelishBowlCategory.Beauty, DelishBowlCategory.Lifestyle],
         isFeatured: true,
