@@ -1,3 +1,9 @@
+## [1.6.2-dev-new-products.1](https://github.com/bisdas/mdb-home/compare/v1.6.1...v1.6.2-dev-new-products.1) (2025-02-07)
+
+### :package: Maintenance
+
+* add new product ([8b0ce0d](https://github.com/bisdas/mdb-home/commit/8b0ce0d2ecc2a18d6ecd52046bcfbfbd8af9f280))
+
 ## [1.6.1](https://github.com/bisdas/mdb-home/compare/v1.6.0...v1.6.1) (2025-01-30)
 
 ### :package: Maintenance
