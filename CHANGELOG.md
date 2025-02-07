@@ -1,3 +1,18 @@
+## [1.6.1](https://github.com/bisdas/mdb-home/compare/v1.6.0...v1.6.1) (2025-01-30)
+
+### :package: Maintenance
+
+* add new link to buy product ([3abbba4](https://github.com/bisdas/mdb-home/commit/3abbba40236ea27139b9a2a226e1f7c2f5540b91))
+* add new products ([0aa402e](https://github.com/bisdas/mdb-home/commit/0aa402e4c54779deeb0c5d96b4eb729cb2cfad6d))
+* **release:** [skip ci] v1.6.1-dev-new-products.1 update changelog ([0490f0f](https://github.com/bisdas/mdb-home/commit/0490f0fbe1a53cb8da8085cd9d84b0267ba11045))
+
+## [1.6.1-dev-new-products.1](https://github.com/bisdas/mdb-home/compare/v1.6.0...v1.6.1-dev-new-products.1) (2025-01-30)
+
+### :package: Maintenance
+
+* add new link to buy product ([3abbba4](https://github.com/bisdas/mdb-home/commit/3abbba40236ea27139b9a2a226e1f7c2f5540b91))
+* add new products ([0aa402e](https://github.com/bisdas/mdb-home/commit/0aa402e4c54779deeb0c5d96b4eb729cb2cfad6d))
+
 ## [1.6.0](https://github.com/bisdas/mdb-home/compare/v1.5.2...v1.6.0) (2025-01-26)
 
 ### :sparkles: New Features
