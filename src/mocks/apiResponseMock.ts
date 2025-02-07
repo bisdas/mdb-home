@@ -3,6 +3,27 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100007',
+        brand: 'Fresh Dew',
+        title: 'Fresh Dew Dark Spot Corrector Brightening Face Cream - With Alpha Arbutin, Kojic Acid and Niacinamide | Helps Reducing Dark Spots, Pigmentation, Sun Spots, Uneven Skin tone & Acne Marks',
+        images: [
+            {
+                imageName: '100007-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/4gvfkz4',
+            },
+        ],
+        categories: [DelishBowlCategory.Beauty],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100006',
         brand: 'Nature Sure',
         title: 'Nature Sure Moringa Leaf Atta Mix | Drumstick Powder Superfood for Iron, Calcium and Vitamins | Sourced directly from farms',
