@@ -15,8 +15,8 @@ export const products: Product[] = [
         ],
         links: [
             {
-                title: 'Amazon',
-                link: 'https://amzn.to/4gvfkz4',
+                title: 'Flipkart',
+                link: 'https://dl.flipkart.com/s/L__I4PuuuN',
             },
         ],
         categories: [DelishBowlCategory.Beauty],
