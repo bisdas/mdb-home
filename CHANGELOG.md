@@ -1,3 +1,9 @@
+## [1.6.5](https://github.com/bisdas/mdb-home/compare/v1.6.4...v1.6.5) (2025-02-08)
+
+### :package: Maintenance
+
+* added amazon link ([ab64a48](https://github.com/bisdas/mdb-home/commit/ab64a48e362171f10ff6add3283be1443d923680))
+
 ## [1.6.4](https://github.com/bisdas/mdb-home/compare/v1.6.3...v1.6.4) (2025-02-08)
 
 ### :repeat: CI
