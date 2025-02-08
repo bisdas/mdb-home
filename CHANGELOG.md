@@ -1,3 +1,9 @@
+## [1.6.4-dev-ci-cd-pipeline.1](https://github.com/bisdas/mdb-home/compare/v1.6.3...v1.6.4-dev-ci-cd-pipeline.1) (2025-02-08)
+
+### :repeat: CI
+
+* reorder install packages ([26461b5](https://github.com/bisdas/mdb-home/commit/26461b5241475af2abae4e4c427af76755795d97))
+
 ## [1.6.3](https://github.com/bisdas/mdb-home/compare/v1.6.2...v1.6.3) (2025-02-08)
 
 ### :package: Maintenance
