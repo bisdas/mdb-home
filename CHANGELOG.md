@@ -1,3 +1,9 @@
+## [1.6.4-dev-new-products.1](https://github.com/bisdas/mdb-home/compare/v1.6.3...v1.6.4-dev-new-products.1) (2025-02-08)
+
+### :package: Maintenance
+
+* update product link ([aacc911](https://github.com/bisdas/mdb-home/commit/aacc9119f30190931cd8608c6b334b527b33d370))
+
 ## [1.6.3](https://github.com/bisdas/mdb-home/compare/v1.6.2...v1.6.3) (2025-02-08)
 
 ### :package: Maintenance
