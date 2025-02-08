@@ -27,9 +27,6 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Netlify
-        run: npm install netlify-cli@17.37.2 -g
-
       - name: Install Dependencies
         run: yarn
 
@@ -38,6 +35,9 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Install Netlify
+        run: yarn global add netlify-cli@17.37.2
 
       - name: Deploy to Netlify
         run: |
