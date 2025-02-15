@@ -1,17 +1,14 @@
-import { ConfigKeys, ConfigValue } from 'src/types/commonTypes';
+import { FirebaseConfigKeys, FirebaseConfigValue } from 'src/types/commonTypes';
 
 interface Configuration {
-    [key: string]: ConfigValue;
+    [key: string]: FirebaseConfigValue;
 }
 
 /**
  * Singleton function for managing configuration settings.
  * @returns {object} An object containing `set` and `get` methods for configuration management.
  */
-export const globalConfig = (() => {
-    /**
-     * Private object to store configuration settings.
-     */
+export const firebaseConfig = (() => {
     const configuration: Configuration = {};
 
     return {
@@ -21,7 +18,7 @@ export const globalConfig = (() => {
          * @param key - The configuration key.
          * @param value - The value to set for the given configuration key.
          */
-        set(key: string, value: ConfigValue) {
+        set(key: string, value: FirebaseConfigValue) {
             configuration[key] = value;
         },
 
@@ -31,10 +28,8 @@ export const globalConfig = (() => {
          * @param key - The configuration key.
          * @returns The value associated with the given configuration key, or `undefined` if the key does not exist.
          */
-        get(key: ConfigKeys): ConfigValue | undefined {
+        get(key: FirebaseConfigKeys): FirebaseConfigValue | undefined {
             return configuration[key];
         },
     };
 })();
-
-// todo: create a class that can be used by both globalConfig and firebaseConfig

@@ -6,6 +6,7 @@ import { getEnvironmentFromUrl } from 'src/utils/commonUtils';
 import { LocalStorageKeyTheme } from 'src/constants/commonConstants';
 import { Theme } from 'src/constants/experienceConstants';
 import { useExperienceStore } from 'src/stores/experienceStore';
+import { initializeFirebaseApp } from 'src/utils/firebaseUtils';
 
 /**
  * Initializes the environment.
@@ -52,6 +53,27 @@ const initializeTheme = () => {
 };
 
 /**
+ * Initializes the firebase backend.
+ * @returns A promise that resolves with the initialized Firebase app instance, or rejects with an error if initialization fails.
+ */
+const initializeFirebaseBackend = () => {
+    return new Promise((resolve, reject) => {
+        try {
+            const firebaseApp = initializeFirebaseApp();
+            if (firebaseApp) {
+                resolve(firebaseApp);
+            } else {
+                reject(new InitializationError(InitializationArea.Firebase, 'Could not initialize Firebase.'));
+            }
+        } catch (error: unknown) {
+            reject(
+                new InitializationError(InitializationArea.Firebase, 'Could not initialize Firebase.', error as Error),
+            );
+        }
+    });
+};
+
+/**
  * React hook for initializing application-wide settings and configurations.
  * @returns
  *  An object containing:
@@ -72,6 +94,8 @@ export const useInitialization = () => {
 
             const theme = (await initializeTheme()) as Theme;
             setExperience({ theme });
+
+            await initializeFirebaseBackend();
         } catch (error: unknown) {
             setLoadingErrors((errors) => [...errors, error as InitializationError]);
         } finally {
