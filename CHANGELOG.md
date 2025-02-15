@@ -1,3 +1,13 @@
+## [1.6.6](https://github.com/bisdas/mdb-home/compare/v1.6.5...v1.6.6) (2025-02-15)
+
+### :repeat: CI
+
+* update release ci ([51c7af4](https://github.com/bisdas/mdb-home/commit/51c7af478ddaf9221ce83fdefb79aa5508b6aeda))
+
+### :package: Maintenance
+
+* firebase setup ([165c15d](https://github.com/bisdas/mdb-home/commit/165c15d6d505a5f2e7b8c23e6dd7772b48de8578))
+
 ## [1.6.5](https://github.com/bisdas/mdb-home/compare/v1.6.4...v1.6.5) (2025-02-08)
 
 ### :package: Maintenance
