@@ -3,6 +3,27 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100008',
+        brand: 'LAKMÉ',
+        title: 'Sun Expert Dry Matte Fluid SPF 50++++ Sunscreen with 1% niacinamide & ceramide, for oily skin & combination skin 50ml',
+        images: [
+            {
+                imageName: '100008-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/3D3xLNl',
+            },
+        ],
+        categories: [DelishBowlCategory.Beauty],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100007',
         brand: 'Fresh Dew',
         title: 'Fresh Dew Dark Spot Corrector Brightening Face Cream - With Alpha Arbutin, Kojic Acid and Niacinamide | Helps Reducing Dark Spots, Pigmentation, Sun Spots, Uneven Skin tone & Acne Marks',
