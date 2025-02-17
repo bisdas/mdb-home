@@ -1,3 +1,11 @@
+## [1.6.7](https://github.com/bisdas/mdb-home/compare/v1.6.6...v1.6.7) (2025-02-17)
+
+### :package: Maintenance
+
+* add new products ([6628de5](https://github.com/bisdas/mdb-home/commit/6628de5d36f21ed4183460384fc0853049daf8de))
+* **release:** [skip ci] v1.6.4-dev-new-products.1 update changelog ([1c4f237](https://github.com/bisdas/mdb-home/commit/1c4f237682a98849a6452b8b593ca5cbc55e8caf))
+* update product link ([aacc911](https://github.com/bisdas/mdb-home/commit/aacc9119f30190931cd8608c6b334b527b33d370))
+
 ## [1.6.6](https://github.com/bisdas/mdb-home/compare/v1.6.5...v1.6.6) (2025-02-15)
 
 ### :repeat: CI
