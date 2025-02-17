@@ -1,8 +1,34 @@
-## [1.6.4-dev-new-products.1](https://github.com/bisdas/mdb-home/compare/v1.6.3...v1.6.4-dev-new-products.1) (2025-02-08)
+## [1.6.6](https://github.com/bisdas/mdb-home/compare/v1.6.5...v1.6.6) (2025-02-15)
+
+### :repeat: CI
+
+* update release ci ([51c7af4](https://github.com/bisdas/mdb-home/commit/51c7af478ddaf9221ce83fdefb79aa5508b6aeda))
 
 ### :package: Maintenance
 
-* update product link ([aacc911](https://github.com/bisdas/mdb-home/commit/aacc9119f30190931cd8608c6b334b527b33d370))
+* firebase setup ([165c15d](https://github.com/bisdas/mdb-home/commit/165c15d6d505a5f2e7b8c23e6dd7772b48de8578))
+
+## [1.6.5](https://github.com/bisdas/mdb-home/compare/v1.6.4...v1.6.5) (2025-02-08)
+
+### :package: Maintenance
+
+* added amazon link ([ab64a48](https://github.com/bisdas/mdb-home/commit/ab64a48e362171f10ff6add3283be1443d923680))
+
+## [1.6.4](https://github.com/bisdas/mdb-home/compare/v1.6.3...v1.6.4) (2025-02-08)
+
+### :repeat: CI
+
+* reorder install packages ([26461b5](https://github.com/bisdas/mdb-home/commit/26461b5241475af2abae4e4c427af76755795d97))
+
+### :package: Maintenance
+
+* **release:** [skip ci] v1.6.4-dev-ci-cd-pipeline.1 update changelog ([875a865](https://github.com/bisdas/mdb-home/commit/875a865d0a2689925c6a7eb1fd0e1b2bbf1dfa19))
+
+## [1.6.4-dev-ci-cd-pipeline.1](https://github.com/bisdas/mdb-home/compare/v1.6.3...v1.6.4-dev-ci-cd-pipeline.1) (2025-02-08)
+
+### :repeat: CI
+
+* reorder install packages ([26461b5](https://github.com/bisdas/mdb-home/commit/26461b5241475af2abae4e4c427af76755795d97))
 
 ## [1.6.3](https://github.com/bisdas/mdb-home/compare/v1.6.2...v1.6.3) (2025-02-08)
 
