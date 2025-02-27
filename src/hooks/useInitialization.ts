@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useState } from 'react';
 import { globalConfig } from 'src/config/globalConfig';
-import { ConfigKeys, InitializationArea } from 'src/types/commonTypes';
+import { ConfigKeys, FirebaseConfigKeys, InitializationArea } from 'src/types/commonTypes';
 import { InitializationError } from 'src/classes/InitializationError';
 import { getEnvironmentFromUrl } from 'src/utils/commonUtils';
 import { LocalStorageKeyTheme } from 'src/constants/commonConstants';
 import { Theme } from 'src/constants/experienceConstants';
 import { useExperienceStore } from 'src/stores/experienceStore';
-import { initializeFirebaseApp } from 'src/utils/firebaseUtils';
+import { initializeFirebaseAnalytics, initializeFirebaseApp } from 'src/utils/firebaseUtils';
+import { firebaseConfig } from 'src/config/firebaseConfig';
 
 /**
  * Initializes the environment.
@@ -56,12 +57,13 @@ const initializeTheme = () => {
  * Initializes the firebase backend.
  * @returns A promise that resolves with the initialized Firebase app instance, or rejects with an error if initialization fails.
  */
-const initializeFirebaseBackend = () => {
+const initializeFirebaseBackend = (): Promise<{ firebaseApp: object; firebaseAnalytics: object }> => {
     return new Promise((resolve, reject) => {
         try {
             const firebaseApp = initializeFirebaseApp();
-            if (firebaseApp) {
-                resolve(firebaseApp);
+            const firebaseAnalytics = initializeFirebaseAnalytics(firebaseApp);
+            if (firebaseApp && firebaseAnalytics) {
+                resolve({ firebaseApp, firebaseAnalytics });
             } else {
                 reject(new InitializationError(InitializationArea.Firebase, 'Could not initialize Firebase.'));
             }
@@ -95,7 +97,8 @@ export const useInitialization = () => {
             const theme = (await initializeTheme()) as Theme;
             setExperience({ theme });
 
-            await initializeFirebaseBackend();
+            const { firebaseAnalytics } = await initializeFirebaseBackend();
+            firebaseConfig.set(FirebaseConfigKeys.Analytics, firebaseAnalytics);
         } catch (error: unknown) {
             setLoadingErrors((errors) => [...errors, error as InitializationError]);
         } finally {
