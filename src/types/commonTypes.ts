@@ -6,7 +6,7 @@ export enum ConfigKeys {
 
 export type FirebaseConfigValue = object;
 export enum FirebaseConfigKeys {
-    Firestore = 'Firestore',
+    Analytics = 'Analytics',
 }
 
 export enum InitializationArea {

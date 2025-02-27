@@ -1,4 +1,4 @@
-/* eslint-disable max-lines-per-function */
+/* eslint-disable max-lines-per-function, camelcase */
 import { Block } from 'src/components/Block/Block';
 // import { useExperienceStore } from 'src/stores/experienceStore';
 // import { Theme } from 'src/constants/experienceConstants';
@@ -22,6 +22,9 @@ import { GoToTop } from 'src/components/shared/GoToTop/GoToTop';
 import ShopCarousal from 'src/components/ShopCarousal/ShopCarousal';
 import { amazonInfluencerShopCarousalmages } from 'src/mocks/apiResponseMock';
 import { CucumberWebsiteAddress } from 'src/constants/dataConstants';
+import { createThrottledLogAnalyticsEvent } from 'src/utils/analyticsUtils';
+import { useEffect } from 'react';
+import { Events } from 'src/constants/analyticsConstants';
 
 /**
  * Home component.
@@ -30,6 +33,14 @@ import { CucumberWebsiteAddress } from 'src/constants/dataConstants';
 export const Home = () => {
     // const { experience, setTheme } = useExperienceStore();
     // const isLightTheme = experience.theme === Theme.LightTheme;
+
+    const logAnalyticsEventThrottled = createThrottledLogAnalyticsEvent(250);
+
+    useEffect(() => {
+        logAnalyticsEventThrottled(Events.load_page, {
+            page_name: 'home',
+        });
+    }, [logAnalyticsEventThrottled]);
 
     const shopCarousalImages = amazonInfluencerShopCarousalmages.map(
         (image: string) => `amazonShopCarousalImages/${image}`,
