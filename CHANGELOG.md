@@ -1,3 +1,13 @@
+## [1.7.0](https://github.com/bisdas/mdb-home/compare/v1.6.8...v1.7.0) (2025-02-27)
+
+### :zap: Refactor
+
+* rename action ([87fc756](https://github.com/bisdas/mdb-home/commit/87fc75643698fa310659614305ffd71d3abe2396))
+
+### :sparkles: New Features
+
+* setup firebase analytics ([78b349e](https://github.com/bisdas/mdb-home/commit/78b349ed8c6b347238ea2490df3db3d1b6a9739a))
+
 ## [1.6.8](https://github.com/bisdas/mdb-home/compare/v1.6.7...v1.6.8) (2025-02-27)
 
 ### :package: Maintenance
