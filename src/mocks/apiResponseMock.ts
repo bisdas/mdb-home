@@ -3,6 +3,27 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100009',
+        brand: 'Vedriti',
+        title: 'Vedriti Wood Pressed Black Mustard Oil for Cooking, Naturally Cholesterol Free. Rich Aroma & Flavour of Real A1 Grade Mustard Seeds. Can Be Used in Daily Cooking. Purity in Every Drop, 1000 ML',
+        images: [
+            {
+                imageName: '100009-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/3QAYAf1',
+            },
+        ],
+        categories: [DelishBowlCategory.Food],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100008',
         brand: 'LAKMÉ',
         title: 'Sun Expert Dry Matte Fluid SPF 50++++ Sunscreen with 1% niacinamide & ceramide, for oily skin & combination skin 50ml',
@@ -154,7 +175,7 @@ export const products: Product[] = [
         ],
         categories: [DelishBowlCategory.Beauty],
         isFeatured: true,
-        available: true,
+        available: false,
     },
     {
         id: '100001',
