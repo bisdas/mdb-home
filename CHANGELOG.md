@@ -1,3 +1,9 @@
+## [1.7.1](https://github.com/bisdas/mdb-home/compare/v1.7.0...v1.7.1) (2025-03-04)
+
+### :package: Maintenance
+
+* move firebase config to secrets ([af03d9a](https://github.com/bisdas/mdb-home/commit/af03d9a12a0272be53d199cc3f768d1786f97745))
+
 ## [1.7.0](https://github.com/bisdas/mdb-home/compare/v1.6.8...v1.7.0) (2025-02-27)
 
 ### :zap: Refactor
