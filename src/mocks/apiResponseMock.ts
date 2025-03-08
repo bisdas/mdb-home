@@ -3,6 +3,31 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100010',
+        brand: 'Ayurica Herbal',
+        title: 'Ayurica Herbal 100% Natural Hair Shampoo Methidana, Shikakai, Reetha and Amla Powder - 171g For Man And Women | Paraben And Sulphate Free Shampoo',
+        images: [
+            {
+                imageName: '100010-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.in/d/bGLzqC1',
+            },
+            {
+                title: 'Website',
+                link: 'https://ayuricaherbal.com/product/natural-hair-shampoo/',
+            }
+        ],
+        categories: [DelishBowlCategory.Beauty],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100009',
         brand: 'Vedriti',
         title: 'Vedriti Wood Pressed Black Mustard Oil for Cooking, Naturally Cholesterol Free. Rich Aroma & Flavour of Real A1 Grade Mustard Seeds. Can Be Used in Daily Cooking. Purity in Every Drop, 1000 ML',
@@ -19,7 +44,7 @@ export const products: Product[] = [
                 link: 'https://amzn.to/3QAYAf1',
             },
         ],
-        categories: [DelishBowlCategory.Food],
+        categories: [DelishBowlCategory.Food, DelishBowlCategory.Beauty],
         isFeatured: true,
         available: true,
     },
