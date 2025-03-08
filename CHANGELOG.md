@@ -1,3 +1,10 @@
+## [1.7.4](https://github.com/bisdas/mdb-home/compare/v1.7.3...v1.7.4) (2025-03-08)
+
+### :package: Maintenance
+
+* add new products ([d44f544](https://github.com/bisdas/mdb-home/commit/d44f544c29b5597db838dd01500a8596fb51035f))
+* add new products ([d0889ef](https://github.com/bisdas/mdb-home/commit/d0889ef3432e79fd3ccab151286e0cca7e6b1be0))
+
 ## [1.7.3](https://github.com/bisdas/mdb-home/compare/v1.7.2...v1.7.3) (2025-03-08)
 
 ### :package: Maintenance
