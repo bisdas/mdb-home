@@ -50,7 +50,7 @@ export const Home = () => {
         <OuterWrapper>
             <HomePageHeader />
             <BlockSeparator />
-            <Block title="Featured Items" subtitle="New arrivals & top products from our sponsors" padding>
+            <Block title="Featured Products" subtitle="New arrivals & top products from our sponsors" padding>
                 <FeaturedItems />
             </Block>
             <BlockSeparator />
