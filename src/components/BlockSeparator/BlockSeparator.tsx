@@ -17,7 +17,7 @@ export const BlockSeparator = () => {
     return (
         <OuterWrapper>
             <ContentWrapper>
-                <IconChevronDown height="1.6em" width="1.6em" color={iconColor} />
+                <IconChevronDown height="1.6em" width="1.6em" color={iconColor} /
             </ContentWrapper>
         </OuterWrapper>
     );
