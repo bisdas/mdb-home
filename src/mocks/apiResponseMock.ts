@@ -21,7 +21,7 @@ export const products: Product[] = [
             {
                 title: 'Website',
                 link: 'https://ayuricaherbal.com/product/natural-hair-shampoo/',
-            }
+            },
         ],
         categories: [DelishBowlCategory.Beauty],
         isFeatured: true,
