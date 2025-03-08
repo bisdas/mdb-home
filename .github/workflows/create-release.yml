@@ -3,13 +3,12 @@ name: Create Release
 on: 
   push:
     branches:
-      - 'master'
+      - '*'
   pull_request:
-    types:
-      - opened
-      - synchronize
-
-run-name: ${{ github.event_name == 'pull_request' && 'Create beta release' || 'Create stable release' }}
+    branches:
+      - '*'
+      
+run-name: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' && 'Create stable release' || 'Create beta release' }}
 
 jobs:
   release:
