@@ -52,7 +52,7 @@ export const BuyingLink = styled.a`
     text-decoration: none;
     background-color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].linkHighlightColor} };
     text-align: center;
-    padding: 0.3rem 0;
+    padding: 0.5rem 0;
     border-radius: 40px;
     color: ${({ theme }: { theme: { theme: keyof typeof themeSetting } }) => themeSetting[theme.theme].buttonText} };
     font-weight: 500;
@@ -113,7 +113,7 @@ export const CategoryChip = styled.span<{ category: DelishBowlCategory }>`
         if (category === DelishBowlCategory.Food) {
             return themeSetting[theme.theme].foodChipBackground;
         }
-        if (category === DelishBowlCategory.Beauty) {
+        if (category === DelishBowlCategory.HealthBeauty) {
             return themeSetting[theme.theme].beautyChipBackground;
         }
         if (category === DelishBowlCategory.Lifestyle) {

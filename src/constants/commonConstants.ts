@@ -21,6 +21,6 @@ export enum SocialPlatform {
 
 export enum DelishBowlCategory {
     Food = 'Food',
-    Beauty = 'Beauty',
+    HealthBeauty = 'Health & Beauty',
     Lifestyle = 'Lifestyle',
 }
