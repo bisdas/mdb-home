@@ -5,7 +5,7 @@ export const products: Product[] = [
     {
         id: '100010',
         brand: 'Ayurica Herbal',
-        title: 'Ayurica Herbal 100% Natural Hair Shampoo Methidana, Shikakai, Reetha and Amla Powder - 171g For Man And Women | Paraben And Sulphate Free Shampoo',
+        title: 'Ayurica Herbal 100% Natural Hair Shampoo with Methidana, Shikakai, Reetha and Amla Powder - 171g For Man And Women | Paraben And Sulphate Free Shampoo',
         images: [
             {
                 imageName: '100010-001.png',
