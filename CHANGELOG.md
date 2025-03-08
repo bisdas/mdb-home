@@ -1,3 +1,9 @@
+## [1.7.5-dev-ci-update.1](https://github.com/bisdas/mdb-home/compare/v1.7.4...v1.7.5-dev-ci-update.1) (2025-03-08)
+
+### :package: Maintenance
+
+* update ci ([cb3bfec](https://github.com/bisdas/mdb-home/commit/cb3bfec8ddc3680bd63badd5f131d6139ea3bae1))
+
 ## [1.7.4](https://github.com/bisdas/mdb-home/compare/v1.7.3...v1.7.4) (2025-03-08)
 
 ### :package: Maintenance
