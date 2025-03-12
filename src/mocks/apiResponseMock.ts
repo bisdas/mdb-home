@@ -3,6 +3,31 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100012',
+        brand: 'Vedriti',
+        title: 'Vedriti Wood Pressed Groundnut Oil | Cold Pressed | Kolhu/Kacchi Ghani | Chemical Free | Cold Pressed Groundnut Oil for Cooking',
+        images: [
+            {
+                imageName: '100012-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/4kJbxRJ',
+            },
+            {
+                title: 'Website',
+                link: 'https://www.vedriti.in/products/vedriti-wood-pressed-groundnut-oil-cold-pressed-kolhu-kacchi-ghani-chemical-free-cold-pressed-groundnut-oil-for-cooking-vedriti_groundnut_oil_p?variant=46585225871636',
+            },
+        ],
+        categories: [DelishBowlCategory.Food],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100011',
         brand: 'Ayuzera',
         title: 'Ayuzera Himalayan Sea Buckthorn Pulp Concentrate 300ml | Liquid Supplements | Makes up to 50 Glass Juice (Rich in Vitamin C) | Lab Tested | Omega 3, 6, 7, and 9, and Antioxidants',
