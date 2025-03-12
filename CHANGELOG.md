@@ -1,3 +1,9 @@
+## [1.7.5-dev-ci-update.3](https://github.com/bisdas/mdb-home/compare/v1.7.5-dev-ci-update.2...v1.7.5-dev-ci-update.3) (2025-03-12)
+
+### :package: Maintenance
+
+* add new product ([a8cf66c](https://github.com/bisdas/mdb-home/commit/a8cf66cfb71857cad9d742aae2ad0ba7b71adf67))
+
 ## [1.7.5-dev-ci-update.2](https://github.com/bisdas/mdb-home/compare/v1.7.5-dev-ci-update.1...v1.7.5-dev-ci-update.2) (2025-03-08)
 
 ### :package: Maintenance
