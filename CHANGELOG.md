@@ -1,3 +1,26 @@
+## [1.7.6](https://github.com/bisdas/mdb-home/compare/v1.7.5...v1.7.6) (2025-03-15)
+
+### :repeat: CI
+
+* update build workflow ([839557e](https://github.com/bisdas/mdb-home/commit/839557e0d2b8c901133cfacb52ae8493812dfb3a))
+* update ci flows ([0711db4](https://github.com/bisdas/mdb-home/commit/0711db45cd9ce7f399b2767267f09017cc87c75f))
+
+### :package: Maintenance
+
+* add new product ([a8cf66c](https://github.com/bisdas/mdb-home/commit/a8cf66cfb71857cad9d742aae2ad0ba7b71adf67))
+* change ([1f91161](https://github.com/bisdas/mdb-home/commit/1f9116192784a38b08f117cce3b629d3b9c14ab3))
+* dummy change ([a32baf8](https://github.com/bisdas/mdb-home/commit/a32baf8d38a07582f4c466dc6ef491a4925eb31b))
+* fix ([28b9393](https://github.com/bisdas/mdb-home/commit/28b93931191aefa73d3b4a8d9f46e9dee1af4e5b))
+* pull master ([9dc2d42](https://github.com/bisdas/mdb-home/commit/9dc2d42fb3a10a44324a3d50b8f7ed10eb8a5c8e))
+* pull master ([ddbeaec](https://github.com/bisdas/mdb-home/commit/ddbeaecff9988f2aed4f055a895fb5c8fed60e87))
+* **release:** [skip ci] v1.7.5-dev-ci-update.1 update changelog ([208a0e5](https://github.com/bisdas/mdb-home/commit/208a0e53f2c2cc9ec11ea4d54cd5484570eaf94d))
+* **release:** [skip ci] v1.7.5-dev-ci-update.2 update changelog ([c674e12](https://github.com/bisdas/mdb-home/commit/c674e1264f6b6a35ff5db35b9ac0bec10a491f64))
+* **release:** [skip ci] v1.7.5-dev-ci-update.3 update changelog ([7877ecf](https://github.com/bisdas/mdb-home/commit/7877ecf5338a2e2b7f78767ccdd179fbdea2d376))
+* **release:** [skip ci] v1.7.6-dev-ci-update.1 update changelog ([0a1ea82](https://github.com/bisdas/mdb-home/commit/0a1ea8254dad8382496bde7e2b99af73c87896fc))
+* udpate product ([a2c097c](https://github.com/bisdas/mdb-home/commit/a2c097cf02796fb2dc3a0ab88a2465291d6adc26))
+* udpate product ([6ce604a](https://github.com/bisdas/mdb-home/commit/6ce604a2384b721a9956a93dbe6fe45d7099c9cc))
+* update ci ([cb3bfec](https://github.com/bisdas/mdb-home/commit/cb3bfec8ddc3680bd63badd5f131d6139ea3bae1))
+
 ## [1.7.6-dev-ci-update.1](https://github.com/bisdas/mdb-home/compare/v1.7.5...v1.7.6-dev-ci-update.1) (2025-03-15)
 
 ### :package: Maintenance
