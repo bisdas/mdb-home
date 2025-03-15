@@ -16,7 +16,7 @@ export const products: Product[] = [
         links: [
             {
                 title: 'Amazon',
-                link: 'https://amzn.to/4kJbxRJ',
+                link: 'https://amzn.to/4kJbxRJ'
             },
             {
                 title: 'Website',
