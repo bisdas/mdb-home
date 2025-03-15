@@ -1,14 +1,15 @@
-name: Create Release
+name: Build Pull Request
 
 on: 
-  push:
+  pull_request:
     branches:
-      - master
+      - '*'
       
 jobs:
   release:
     permissions:
-      contents: write
+      contents: read
+      pull-requests: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -27,8 +28,3 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Create Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
