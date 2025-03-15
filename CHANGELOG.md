@@ -1,15 +1,8 @@
-## [1.7.5-dev-ci-update.2](https://github.com/bisdas/mdb-home/compare/v1.7.5-dev-ci-update.1...v1.7.5-dev-ci-update.2) (2025-03-08)
+## [1.7.5](https://github.com/bisdas/mdb-home/compare/v1.7.4...v1.7.5) (2025-03-12)
 
 ### :package: Maintenance
 
-* change ([1f91161](https://github.com/bisdas/mdb-home/commit/1f9116192784a38b08f117cce3b629d3b9c14ab3))
-* fix ([28b9393](https://github.com/bisdas/mdb-home/commit/28b93931191aefa73d3b4a8d9f46e9dee1af4e5b))
-
-## [1.7.5-dev-ci-update.1](https://github.com/bisdas/mdb-home/compare/v1.7.4...v1.7.5-dev-ci-update.1) (2025-03-08)
-
-### :package: Maintenance
-
-* update ci ([cb3bfec](https://github.com/bisdas/mdb-home/commit/cb3bfec8ddc3680bd63badd5f131d6139ea3bae1))
+* add new product ([972742d](https://github.com/bisdas/mdb-home/commit/972742d450c3df8e2ac7f2895d2ed0ebb8d8e0b0))
 
 ## [1.7.4](https://github.com/bisdas/mdb-home/compare/v1.7.3...v1.7.4) (2025-03-08)
 
