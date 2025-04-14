@@ -3,6 +3,27 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100013',
+        brand: 'Proskire',
+        title: 'Proskire Intense Hair Growth Serum with Redensyl, Anagain, Procapil, Capilia Longa, Biotin & Ashwagandha',
+        images: [
+            {
+                imageName: '100013-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/44mAtc8',
+            },
+        ],
+        categories: [DelishBowlCategory.HealthBeauty],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100012',
         brand: 'Vedriti',
         title: 'Vedriti Wood Pressed Groundnut Oil | Cold Pressed | Kolhu/Kacchi Ghani | Chemical Free | Cold Pressed Groundnut Oil for Cooking',
@@ -144,72 +165,72 @@ export const products: Product[] = [
         isFeatured: true,
         available: true,
     },
-    {
-        id: '100006',
-        brand: 'Nature Sure',
-        title: 'Nature Sure Moringa Leaf Atta Mix | Drumstick Powder Superfood for Iron, Calcium and Vitamins | Sourced directly from farms',
-        images: [
-            {
-                imageName: '100006-001.png',
-                isIcon: true,
-                backgroundColor: '#f4f4f4',
-            },
-        ],
-        links: [
-            {
-                title: 'Website',
-                link: 'https://bit.ly/3CvFSSK',
-            },
-            {
-                title: 'Amazon',
-                link: 'https://amzn.to/49JMk4J',
-            },
-            {
-                title: 'Flipkart',
-                link: 'https://bit.ly/43cqT8d',
-            },
-            {
-                title: 'Meesho',
-                link: 'https://bit.ly/3qm2COq',
-            },
-        ],
-        categories: [DelishBowlCategory.HealthBeauty, DelishBowlCategory.Lifestyle],
-        isFeatured: true,
-        available: true,
-    },
-    {
-        id: '100002',
-        brand: 'Nature Sure',
-        title: 'Nature Sure Tulsi Leaf Powder 200g. Pure and natural tulsi leaf powder (holy basil) sourced directly from farms',
-        images: [
-            {
-                imageName: '100002-001.png',
-                isIcon: true,
-                backgroundColor: '#f4f4f4',
-            },
-        ],
-        links: [
-            {
-                title: 'Website',
-                link: 'https://bit.ly/4gTKO2G',
-            },
-            {
-                title: 'Amazon',
-                link: 'https://amzn.to/3C4Qjwu',
-            },
-            {
-                title: 'Flipkart',
-                link: 'https://bit.ly/40kXVmn',
-            },
-            {
-                title: 'Meesho',
-                link: 'https://bit.ly/4g63ElQ',
-            },
-        ],
-        categories: [DelishBowlCategory.HealthBeauty, DelishBowlCategory.Lifestyle],
-        isFeatured: true,
-        available: true,
-    },
+    // {
+    //     id: '100006',
+    //     brand: 'Nature Sure',
+    //     title: 'Nature Sure Moringa Leaf Atta Mix | Drumstick Powder Superfood for Iron, Calcium and Vitamins | Sourced directly from farms',
+    //     images: [
+    //         {
+    //             imageName: '100006-001.png',
+    //             isIcon: true,
+    //             backgroundColor: '#f4f4f4',
+    //         },
+    //     ],
+    //     links: [
+    //         {
+    //             title: 'Website',
+    //             link: 'https://bit.ly/3CvFSSK',
+    //         },
+    //         {
+    //             title: 'Amazon',
+    //             link: 'https://amzn.to/49JMk4J',
+    //         },
+    //         {
+    //             title: 'Flipkart',
+    //             link: 'https://bit.ly/43cqT8d',
+    //         },
+    //         {
+    //             title: 'Meesho',
+    //             link: 'https://bit.ly/3qm2COq',
+    //         },
+    //     ],
+    //     categories: [DelishBowlCategory.HealthBeauty, DelishBowlCategory.Lifestyle],
+    //     isFeatured: true,
+    //     available: true,
+    // },
+    // {
+    //     id: '100002',
+    //     brand: 'Nature Sure',
+    //     title: 'Nature Sure Tulsi Leaf Powder 200g. Pure and natural tulsi leaf powder (holy basil) sourced directly from farms',
+    //     images: [
+    //         {
+    //             imageName: '100002-001.png',
+    //             isIcon: true,
+    //             backgroundColor: '#f4f4f4',
+    //         },
+    //     ],
+    //     links: [
+    //         {
+    //             title: 'Website',
+    //             link: 'https://bit.ly/4gTKO2G',
+    //         },
+    //         {
+    //             title: 'Amazon',
+    //             link: 'https://amzn.to/3C4Qjwu',
+    //         },
+    //         {
+    //             title: 'Flipkart',
+    //             link: 'https://bit.ly/40kXVmn',
+    //         },
+    //         {
+    //             title: 'Meesho',
+    //             link: 'https://bit.ly/4g63ElQ',
+    //         },
+    //     ],
+    //     categories: [DelishBowlCategory.HealthBeauty, DelishBowlCategory.Lifestyle],
+    //     isFeatured: true,
+    //     available: true,
+    // },
     {
         id: '100003',
         brand: 'Proskire',
@@ -231,27 +252,27 @@ export const products: Product[] = [
         isFeatured: true,
         available: true,
     },
-    {
-        id: '100004',
-        brand: 'Alps Goodness',
-        title: 'Alps Goodness Pure Essential Oil - Rosemary (10 ml) | Essential oil for Hair & Skin | Paraben Free, Fragnance Free, Mineral Oil Free | Healthy Hair Growth | Fights Acne',
-        images: [
-            {
-                imageName: '100004-001.png',
-                isIcon: true,
-                backgroundColor: '#f4f4f4',
-            },
-        ],
-        links: [
-            {
-                title: 'Website',
-                link: 'https://mlpl.link/dgyuHINF',
-            },
-        ],
-        categories: [DelishBowlCategory.HealthBeauty],
-        isFeatured: true,
-        available: false,
-    },
+    // {
+    //     id: '100004',
+    //     brand: 'Alps Goodness',
+    //     title: 'Alps Goodness Pure Essential Oil - Rosemary (10 ml) | Essential oil for Hair & Skin | Paraben Free, Fragnance Free, Mineral Oil Free | Healthy Hair Growth | Fights Acne',
+    //     images: [
+    //         {
+    //             imageName: '100004-001.png',
+    //             isIcon: true,
+    //             backgroundColor: '#f4f4f4',
+    //         },
+    //     ],
+    //     links: [
+    //         {
+    //             title: 'Website',
+    //             link: 'https://mlpl.link/dgyuHINF',
+    //         },
+    //     ],
+    //     categories: [DelishBowlCategory.HealthBeauty],
+    //     isFeatured: true,
+    //     available: false,
+    // },
     {
         id: '100001',
         brand: 'Orashora',
