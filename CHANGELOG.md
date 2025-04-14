@@ -1,3 +1,9 @@
+## [1.7.7](https://github.com/bisdas/mdb-home/compare/v1.7.6...v1.7.7) (2025-04-14)
+
+### :bug: Bug Fixes
+
+* update products ([7eb610f](https://github.com/bisdas/mdb-home/commit/7eb610f23234ac5b2ac365429cc6ba6331328229))
+
 ## [1.7.6](https://github.com/bisdas/mdb-home/compare/v1.7.5...v1.7.6) (2025-03-15)
 
 ### :repeat: CI
