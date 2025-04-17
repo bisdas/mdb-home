@@ -3,6 +3,31 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100014',
+        brand: 'RLB-CHOICE',
+        title: 'Rlb Choice-Detox Loose Leaves Green Tea-Your Path To Wellness-Purity In Every Sip, Better Digestion, Boost Immunity, Skin Glow',
+        images: [
+            {
+                imageName: '100014-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.in/d/9HEwSap',
+            },
+            {
+                title: 'Website',
+                link: 'https://www.rlbchoice.com/product-page/detox-green-tea',
+            },
+        ],
+        categories: [DelishBowlCategory.HealthBeauty],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100013',
         brand: 'Proskire',
         title: 'Proskire Intense Hair Growth Serum with Redensyl, Anagain, Procapil, Capilia Longa, Biotin & Ashwagandha',
