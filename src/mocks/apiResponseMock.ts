@@ -323,27 +323,27 @@ export const products: Product[] = [
     //     isFeatured: true,
     //     available: false,
     // },
-    {
-        id: '100001',
-        brand: 'Orashora',
-        title: 'Orashora Karan Herbs Melt And Pour Clear Transparent Soap Base (Sls, Sles & Paraben-Free) - 950Gm',
-        images: [
-            {
-                imageName: '100001-001.png',
-                isIcon: true,
-                backgroundColor: '#f4f4f4',
-            },
-        ],
-        links: [
-            {
-                title: 'View on Amazon',
-                link: 'https://amzn.to/47st5Lr',
-            },
-        ],
-        categories: [DelishBowlCategory.HealthBeauty, DelishBowlCategory.Lifestyle],
-        isFeatured: true,
-        available: true,
-    },
+    // {
+    //     id: '100001',
+    //     brand: 'Orashora',
+    //     title: 'Orashora Karan Herbs Melt And Pour Clear Transparent Soap Base (Sls, Sles & Paraben-Free) - 950Gm',
+    //     images: [
+    //         {
+    //             imageName: '100001-001.png',
+    //             isIcon: true,
+    //             backgroundColor: '#f4f4f4',
+    //         },
+    //     ],
+    //     links: [
+    //         {
+    //             title: 'View on Amazon',
+    //             link: 'https://amzn.to/47st5Lr',
+    //         },
+    //     ],
+    //     categories: [DelishBowlCategory.HealthBeauty, DelishBowlCategory.Lifestyle],
+    //     isFeatured: true,
+    //     available: true,
+    // },
 ];
 
 export const amazonInfluencerShopCarousalmages = [
