@@ -3,6 +3,31 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100015',
+        brand: 'Vedriti',
+        title: 'Vedriti Wood Pressed Coconut Oil, Cold Pressed, Kolhu/Kacchi Ghani, Chemical Free, Multipurpose Usage, A1 Grade Coconuts, Purity In Every Drop',
+        images: [
+            {
+                imageName: '100015-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/3Gm1cvr',
+            },
+            {
+                title: 'Website',
+                link: 'https://www.vedriti.in/products/vedriti-wood-pressed-coconut-oil-cold-pressed-kolhu-kacchi-ghani-chemical-free-cold-pressed-coconut-oil-for-cooking-vedriti_coconut_oil_p?variant=46585225052436',
+            },
+        ],
+        categories: [DelishBowlCategory.HealthBeauty],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100014',
         brand: 'RLB-CHOICE',
         title: 'Rlb Choice-Detox Loose Leaves Green Tea-Your Path To Wellness-Purity In Every Sip, Better Digestion, Boost Immunity, Skin Glow',
