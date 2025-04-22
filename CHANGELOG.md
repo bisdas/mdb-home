@@ -1,3 +1,9 @@
+## [1.7.10](https://github.com/bisdas/mdb-home/compare/v1.7.9...v1.7.10) (2025-04-22)
+
+### :package: Maintenance
+
+* remove a product ([3d3ccaf](https://github.com/bisdas/mdb-home/commit/3d3ccaf7e713cf7bba20ebd65e0bd64dcc6875f9))
+
 ## [1.7.9](https://github.com/bisdas/mdb-home/compare/v1.7.8...v1.7.9) (2025-04-22)
 
 ### :bug: Bug Fixes
