@@ -3,6 +3,31 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100016',
+        brand: 'Vedriti',
+        title: 'Vedriti Wood Pressed White Sesame Oil, Cold Pressed, Kolhu/Kacchi Ghani, Chemical Free, Naturally Cholesterol Free, Sesame Oil with Rich Aroma & Flavour of Real Sesame Seeds, Can Be Used in Daily Cooking, Multipurpose Usage, A1 Grade Sesame Seeds, Purity in Every Drop',
+        images: [
+            {
+                imageName: '100016-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/4jCQuyP',
+            },
+            {
+                title: 'Website',
+                link: 'https://www.vedriti.in/products/vedriti-wood-pressed-white-sesame-oil-cold-pressed-kolhu-kacchi-ghani-chemical-free-cold-pressed-white-sesame-oil-for-cooking-vedriti_sesame_oil_p?variant=46585226854676',
+            },
+        ],
+        categories: [DelishBowlCategory.HealthBeauty],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100015',
         brand: 'Vedriti',
         title: 'Vedriti Wood Pressed Coconut Oil, Cold Pressed, Kolhu/Kacchi Ghani, Chemical Free, Multipurpose Usage, A1 Grade Coconuts, Purity In Every Drop',
