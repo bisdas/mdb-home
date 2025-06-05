@@ -3,6 +3,27 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100017',
+        brand: 'Floradust',
+        title: '100% Pure Moringa Leaves & Drumstick Powder | Herbal Supplement for Immunity, Skin, Hair & Weight Management | Vitamins & Antioxidants',
+        images: [
+            {
+                imageName: '100017-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/456rBI9',
+            },
+        ],
+        categories: [DelishBowlCategory.HealthBeauty, DelishBowlCategory.Food],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100016',
         brand: 'Vedriti',
         title: 'Vedriti Wood Pressed White Sesame Oil, Cold Pressed, Kolhu/Kacchi Ghani, Chemical Free, Naturally Cholesterol Free, Sesame Oil with Rich Aroma & Flavour of Real Sesame Seeds, Can Be Used in Daily Cooking, Multipurpose Usage, A1 Grade Sesame Seeds, Purity in Every Drop',
