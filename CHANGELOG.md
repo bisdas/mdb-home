@@ -1,3 +1,9 @@
+## [1.7.13](https://github.com/bisdas/mdb-home/compare/v1.7.12...v1.7.13) (2025-07-24)
+
+### :package: Maintenance
+
+* change product ranking ([8e322db](https://github.com/bisdas/mdb-home/commit/8e322db3179a232ec3c58fd7e44d1ee338232a55))
+
 ## [1.7.12](https://github.com/bisdas/mdb-home/compare/v1.7.11...v1.7.12) (2025-06-05)
 
 ### :package: Maintenance
