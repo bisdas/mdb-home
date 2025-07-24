@@ -3,6 +3,31 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100007',
+        brand: 'Fresh Dew',
+        title: 'Fresh Dew Dark Spot Corrector Brightening Face Cream - With Alpha Arbutin, Kojic Acid and Niacinamide | Helps Reducing Dark Spots, Pigmentation, Sun Spots, Uneven Skin tone & Acne Marks',
+        images: [
+            {
+                imageName: '100007-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/4gvfkz4',
+            },
+            {
+                title: 'Flipkart',
+                link: 'https://dl.flipkart.com/s/2jNsmmNNNN',
+            },
+        ],
+        categories: [DelishBowlCategory.HealthBeauty],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100017',
         brand: 'Floradust',
         title: '100% Pure Moringa Leaves & Drumstick Powder | Herbal Supplement for Immunity, Skin, Hair & Weight Management | Vitamins & Antioxidants',
@@ -230,31 +255,6 @@ export const products: Product[] = [
             {
                 title: 'Amazon',
                 link: 'https://amzn.to/3D3xLNl',
-            },
-        ],
-        categories: [DelishBowlCategory.HealthBeauty],
-        isFeatured: true,
-        available: true,
-    },
-    {
-        id: '100007',
-        brand: 'Fresh Dew',
-        title: 'Fresh Dew Dark Spot Corrector Brightening Face Cream - With Alpha Arbutin, Kojic Acid and Niacinamide | Helps Reducing Dark Spots, Pigmentation, Sun Spots, Uneven Skin tone & Acne Marks',
-        images: [
-            {
-                imageName: '100007-001.png',
-                isIcon: true,
-                backgroundColor: '#f4f4f4',
-            },
-        ],
-        links: [
-            {
-                title: 'Amazon',
-                link: 'https://amzn.to/4gvfkz4',
-            },
-            {
-                title: 'Flipkart',
-                link: 'https://dl.flipkart.com/s/L__I4PuuuN',
             },
         ],
         categories: [DelishBowlCategory.HealthBeauty],
