@@ -3,6 +3,31 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100009',
+        brand: 'Vedriti',
+        title: 'Vedriti Wood Pressed Black Mustard Oil for Cooking, Naturally Cholesterol Free. Rich Aroma & Flavour of Real A1 Grade Mustard Seeds. Can Be Used in Daily Cooking. Purity in Every Drop, 1000 ML',
+        images: [
+            {
+                imageName: '100009-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/3QAYAf1',
+            },
+            {
+                title: 'Website',
+                link: 'https://www.vedriti.in/products/pure-wood-pressed-black-mustard-oil?variant=46585221972244',
+            },
+        ],
+        categories: [DelishBowlCategory.Food, DelishBowlCategory.HealthBeauty],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100007',
         brand: 'Fresh Dew',
         title: 'Fresh Dew Dark Spot Corrector Brightening Face Cream - With Alpha Arbutin, Kojic Acid and Niacinamide | Helps Reducing Dark Spots, Pigmentation, Sun Spots, Uneven Skin tone & Acne Marks',
@@ -216,27 +241,6 @@ export const products: Product[] = [
             },
         ],
         categories: [DelishBowlCategory.HealthBeauty],
-        isFeatured: true,
-        available: true,
-    },
-    {
-        id: '100009',
-        brand: 'Vedriti',
-        title: 'Vedriti Wood Pressed Black Mustard Oil for Cooking, Naturally Cholesterol Free. Rich Aroma & Flavour of Real A1 Grade Mustard Seeds. Can Be Used in Daily Cooking. Purity in Every Drop, 1000 ML',
-        images: [
-            {
-                imageName: '100009-001.png',
-                isIcon: true,
-                backgroundColor: '#f4f4f4',
-            },
-        ],
-        links: [
-            {
-                title: 'Amazon',
-                link: 'https://amzn.to/3QAYAf1',
-            },
-        ],
-        categories: [DelishBowlCategory.Food, DelishBowlCategory.HealthBeauty],
         isFeatured: true,
         available: true,
     },
