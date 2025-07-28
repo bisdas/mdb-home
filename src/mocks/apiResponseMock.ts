@@ -3,6 +3,31 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100018',
+        brand: 'Botanical Beauty',
+        title: 'Premium Quality Moringa Face Oil. Cold-pressed oil extracted from Moringa seeds, rich in antioxidants, vitamins A and C, and essential fatty acids',
+        images: [
+            {
+                imageName: '100018-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/46v3nb7',
+            },
+            {
+                title: 'Website',
+                link: 'https://www.botanicalbeautyproducts.com/product-page/premium-quality-moringa-face-oil-30ml',
+            },
+        ],
+        categories: [DelishBowlCategory.HealthBeauty],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100009',
         brand: 'Vedriti',
         title: 'Vedriti Wood Pressed Black Mustard Oil for Cooking, Naturally Cholesterol Free. Rich Aroma & Flavour of Real A1 Grade Mustard Seeds. Can Be Used in Daily Cooking. Purity in Every Drop, 1000 ML',
