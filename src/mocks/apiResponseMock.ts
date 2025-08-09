@@ -3,6 +3,31 @@ import { Product } from 'src/constants/schema';
 
 export const products: Product[] = [
     {
+        id: '100019',
+        brand: 'Greenwell',
+        title: 'Greenwell 2% Kojic Acid Serum with Alpha Arbutin, Niacinamide & Hyaluronic Acid – Dark Spot Remover, Skin Brightening & Pigmentation Control – Face Serum for Glowing Skin',
+        images: [
+            {
+                imageName: '100019-001.png',
+                isIcon: true,
+                backgroundColor: '#f4f4f4',
+            },
+        ],
+        links: [
+            {
+                title: 'Amazon',
+                link: 'https://amzn.to/3JafMYi',
+            },
+            {
+                title: 'Flipkart',
+                link: 'https://www.flipkart.com/greenwell-2-kojic-acid-face-serum-alpha-arbutin-niacinamide-[…]-spot-pigmentation-removal-night-use-only/p/itma55b52fb88994',
+            },
+        ],
+        categories: [DelishBowlCategory.HealthBeauty],
+        isFeatured: true,
+        available: true,
+    },
+    {
         id: '100018',
         brand: 'Botanical Beauty',
         title: 'Premium Quality Moringa Face Oil. Cold-pressed oil extracted from Moringa seeds, rich in antioxidants, vitamins A and C, and essential fatty acids',
